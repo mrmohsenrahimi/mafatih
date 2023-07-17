@@ -6,10 +6,46 @@
     background: #E2F0F1;
 }
 
-.bg-offcanvas {
+.bg-light-green {
     background-color: #B8DBD9;
 }
 
 .bg-searchbox {
     background: #E2F0F1;
+}
+
+.calendar-box-width {
+    width: 70%;
+}
+
+.calendar-box-color {
+    background: #0C1F34;
+}
+
+.text-color {
+    color: #B4924D;
+}
+
+@media screen and (min-width: 768px) {
+    .calendar-box-width {
+        width: 40%;
+    }
+}
+
+.message-box-width {
+    width: 80%;
+}
+
+.message-box-color {
+    background: #1C6981;
+}
+
+@media screen and (min-width: 768px) {
+    .message-box-width {
+        width: 45%;
+    }
+}
+
+.bg-photo {
+    background: url("../images/nody-عکس-ضریح-امام-حسین-برای-پروفایل-1628285252 1.jpg");
 }
