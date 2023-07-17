@@ -9,27 +9,61 @@
         <link rel="stylesheet" href="static/assets/css/bootstrap.css">
         <link rel="stylesheet" href="static/assets/css/bootstrap.rtl.css">
         <link rel="stylesheet" href="static/assets/css/all.css">
+        <link rel="stylesheet" href="static/assets/css/style.css">
     </head>
     <body>
-        <nav class="navbar bg-info" dir="ltr">
-            <div class="container-fluid d-flex">
-                <div class="offcanvas offcanvas-start" dir="rtl" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <nav class="navbar bg-header" dir="ltr">
+            <div class="container-fluid d-flex justify-content-between px-4">
+                <div class="offcanvas offcanvas-start bg-offcanvas" dir="rtl" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <div>
-                            I will not close if you click outside of me.
-                        </div>
+                        <form action="" enctype="multipart/form-data" class="d-flex">
+                            <label for="inp-search-1" class="input-group-text border-0 bg-searchbox rounded-0 rounded-start-4">@</label>
+                            <input type="text" name="name" id="inp-search-1" class="form-control border-0 bg-searchbox rounded-0" placeholder="البحث في المفاتیح الجنان">
+                            <span class="input-group-text border-0 bg-searchbox rounded-0 rounded-end-4">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                        </form>
                     </div>
                 </div>
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="links">
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-dark"><i class="fa-light fa-globe fa-2xl"></i></a>
+                        <a href="#" class="text-dark"><i class="fa-light fa-circle-user fa-2xl"></i></a>
+                    </div>
+                </div>
+                <div class="icon-link">
+                    <a class="navbar-brand" href="#">
+                        <img src="static/assets/images/logo.png" alt="logo of site" width="60">
+                    </a>
+                </div>
+                <div class="">
+                    <button class="btn p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
             </div>
         </nav>
+        <div class="container mt-5">
+            <div class="form-box pt-5">
+                <form action="" enctype="multipart/form-data" class="d-flex">
+                    <label for="inp-search-2" class="input-group-text border-0 bg-searchbox rounded-0 rounded-start-4">@</label>
+                    <input type="text" name="name" id="inp-search-2" class="form-control border-0 bg-searchbox rounded-0" placeholder="البحث في المفاتیح الجنان">
+                    <span class="input-group-text border-0 bg-searchbox rounded-0 rounded-end-4">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </form>
+            </div>
+            <div class="calendar mt-4 mx-2">
+                <div class="calender-box d-flex flex-column">
+                    <div class="">چهار شنیه ۱۱ اسفند ۱۴۰۲</div>
+                    <div class="">الارابعاء ۱۱ شعبان ۱۴۴۶</div>
+                    <div class="">2022 march 11 wednesday</div>
+                </div>
+            </div>
+        </div>
         
     
         <script src="static/assets/js/bootstrap.bundle.js"></script>

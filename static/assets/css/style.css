@@ -1,3 +1,15 @@
-.rounded-form {
-    border-radius: 8px 8px 0 0;
+* {
+    box-sizing: border-box;
+}
+
+.bg-header {
+    background: #E2F0F1;
+}
+
+.bg-offcanvas {
+    background-color: #B8DBD9;
+}
+
+.bg-searchbox {
+    background: #E2F0F1;
 }
