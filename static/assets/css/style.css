@@ -46,6 +46,14 @@
     }
 }
 
-.bg-photo {
-    background: url("../images/nody-عکس-ضریح-امام-حسین-برای-پروفایل-1628285252 1.jpg");
+.text-color-footer {
+    color: #847048;
+}
+
+.bg-actions {
+    background: #E2F0F1;
+}
+
+.hover-none:hover {
+    color: black;
 }
