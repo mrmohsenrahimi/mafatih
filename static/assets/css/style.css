@@ -57,3 +57,11 @@
 .hover-none:hover {
     color: black;
 }
+
+.hover-input-search:hover,
+.hover-input-search:focus,
+.hover-input-search:active {
+    background: #E2F0F1;
+    border: none;
+    box-shadow: none;
+}
