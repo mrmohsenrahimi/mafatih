@@ -6,26 +6,38 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
-        <link rel="stylesheet" href="static/assets/css/bootstrap.css">
-        <link rel="stylesheet" href="static/assets/css/bootstrap.rtl.css">
-        <link rel="stylesheet" href="static/assets/css/all.css">
-        <link rel="stylesheet" href="static/assets/css/style.css">
+        <link rel="stylesheet" href="./static/assets/css/bootstrap.css">
+        <link rel="stylesheet" href="./static/assets/css/bootstrap.rtl.css">
+        <link rel="stylesheet" href="./static/assets/css/all.css">
+        <link rel="stylesheet" href="./static/assets/css/style.css">
+        
+        <!--  OWL CSS -->
+        <link rel="stylesheet" href="./static/assets/plugins/owl/owl.carousel.css">
+        <link rel="stylesheet" href="./static/assets/plugins/owl/owl.theme.default.css">
+        <!--  END OWL CSS -->
     </head>
     <body>
+        
+        <!--         navbar -->
         <nav class="navbar bg-header position-sticky top-0 w-100" dir="ltr">
             <div class="container-fluid d-flex justify-content-between px-4">
-                <div class="offcanvas offcanvas-start bg-light-green" dir="rtl" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                <div class="offcanvas offcanvas-start bg-light-green" dir="rtl" data-bs-backdrop="static" tabindex="-1"
+                     id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                     <div class="offcanvas-header">
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <form action="" enctype="multipart/form-data" class="d-flex">
                             <div class="p-2 bg-searchbox rounded-0 rounded-start-5">
-                                <button type="button" class="btn bg-searchbox rounded-4"><i class="fa-regular fa-sliders"></i></button>
+                                <button type="button" class="btn bg-searchbox rounded-4"><i
+                                        class="fa-regular fa-sliders"></i></button>
                             </div>
-                            <input type="text" name="name" class="form-control border-0 bg-searchbox rounded-0 hover-input-search" placeholder="البحث في المفاتیح الجنان">
+                            <input type="text" name="name"
+                                   class="form-control border-0 bg-searchbox rounded-0 hover-input-search"
+                                   placeholder="البحث في المفاتیح الجنان">
                             <div class="p-2 bg-searchbox rounded-0 rounded-end-5">
-                                <button type="button" class="btn bg-searchbox rounded-4"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button type="button" class="btn bg-searchbox rounded-4"><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
                             </div>
                         </form>
                     </div>
@@ -42,33 +54,52 @@
                     </a>
                 </div>
                 <div class="navbar-toggle width-element-header d-flex justify-content-end">
-                    <button class="btn p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                    <button class="btn p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                            aria-controls="staticBackdrop">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
             </div>
         </nav>
+        <!--         navbar -->
+        
+        <!--         search box -->
         <div class="container mt-5 px-4">
             <div class="form-box py-5">
                 <form action="" enctype="multipart/form-data" class="d-flex">
                     <div class="p-2 bg-searchbox rounded-0 rounded-start-5">
-                        <button type="button" class="btn bg-searchbox rounded-4"><i class="fa-regular fa-sliders"></i></button>
+                        <button type="button" class="btn bg-searchbox rounded-4"><i class="fa-regular fa-sliders"></i>
+                        </button>
                     </div>
-                    <input type="text" name="name" class="form-control border-0 bg-searchbox rounded-0 hover-input-search" placeholder="البحث في المفاتیح الجنان">
+                    <input type="text" name="name"
+                           class="form-control border-0 bg-searchbox rounded-0 hover-input-search"
+                           placeholder="البحث في المفاتیح الجنان">
                     <div class="p-2 bg-searchbox rounded-0 rounded-end-5">
-                        <button type="button" class="btn bg-searchbox rounded-4"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button type="button" class="btn bg-searchbox rounded-4"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                 </form>
             </div>
+            <!--         search box -->
+            
+            <!--             calender -->
             <div class="calendar mt-5 text-white pb-4">
                 <div class="calender-box calendar-box-width m-auto calendar-box-color rounded-3">
-                   <div class="d-flex flex-column align-items-center p-2">
-                       <div class="calender-item py-2 fs-5"><span class="text-color">چهار شنه</span> ۱۱ <span class="text-color">اسفند</span> ۱۴۰۲</div>
-                       <div class="calender-item py-2 fs-5"><span class="text-color">الارابعاء</span> ۱۱ <span class="text-color">شعبان</span> ۱۴۴۶</div>
-                       <div class="calender-item py-2">2022 <span class="text-color">march</span> 11 <span class="text-color">wednesday</span></div>
-                   </div>
+                    <div class="d-flex flex-column align-items-center p-2">
+                        <div class="calender-item py-2 fs-5"><span class="text-color">چهار شنه</span> ۱۱ <span
+                                class="text-color">اسفند</span> ۱۴۰۲
+                        </div>
+                        <div class="calender-item py-2 fs-5"><span class="text-color">الارابعاء</span> ۱۱ <span
+                                class="text-color">شعبان</span> ۱۴۴۶
+                        </div>
+                        <div class="calender-item py-2">2022 <span class="text-color">march</span> 11 <span
+                                class="text-color">wednesday</span></div>
+                    </div>
                 </div>
             </div>
+            <!--             calender -->
+            
+            <!--             message box -->
             <div class="message my-5">
                 <div class="message-box message-box-width m-auto message-box-color text-white rounded-pill">
                     <div class="d-flex flex-column align-items-center p-2 fs-4 fw-bolder">
@@ -78,6 +109,9 @@
                 </div>
             </div>
         </div>
+        <!--             message box -->
+    
+<!--         mention-the-days-of-the-week -->
         <div class="bg-light-green">
             <div class="mention-the-days-of-the-week container px-4 d-flex flex-column">
                 <h3 class="text-color-footer pt-4">ذکر الیوم الاربعاء</h3>
@@ -86,36 +120,49 @@
                 </div>
             </div>
         </div>
+        <!--         mention-the-days-of-the-week -->
+        
+<!--         actions section -->
         <div class="actions bg-actions pt-2 pb-4 border-top-1">
             <div class="actions-container container d-flex flex-column align-items-start pb-1">
                 <div class="head-of-prayers align-self-center">
                     <h2 class="text-color-prayers py-3 mb-0">اعمال الخاصه في لیلة ۲۱ من رمضان (لیلة القدر)</h2>
                 </div>
                 <div class="actions-for-days-of-the-week d-flex align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span><p class="d-inline-block m-0">احیاء</p>
+                    <span class="text-color pe-2 ps-0">1.</span>
+                    <p class="d-inline-block m-0">احیاء</p>
                 </div>
                 <div class="actions-for-days-of-the-week align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span><p class="d-inline-block m-0">احیاء</p>
+                    <span class="text-color pe-2 ps-0">1.</span>
+                    <p class="d-inline-block m-0">احیاء</p>
                 </div>
                 <div class="actions-for-days-of-the-week align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span><p class="d-inline-block m-0">احیاء</p>
+                    <span class="text-color pe-2 ps-0">1.</span>
+                    <p class="d-inline-block m-0">احیاء</p>
                 </div>
                 <div class="actions-for-days-of-the-week align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span><p class="d-inline-block m-0">احیاء</p>
+                    <span class="text-color pe-2 ps-0">1.</span>
+                    <p class="d-inline-block m-0">احیاء</p>
                 </div>
                 <div class="actions-for-days-of-the-week align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span><p class="d-inline-block m-0">احیاء</p>
+                    <span class="text-color pe-2 ps-0">1.</span>
+                    <p class="d-inline-block m-0">احیاء</p>
                 </div>
                 <div class="actions-for-days-of-the-week align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span><p class="d-inline-block m-0">احیاء</p>
+                    <span class="text-color pe-2 ps-0">1.</span>
+                    <p class="d-inline-block m-0">احیاء</p>
                 </div>
                 <div class="button-for-actions align-self-center">
                     <a href="#" class="hover-none">
-                        <button type="button" class="btn bg-white shadow rounded-pill fs-5">اقراء المزید...  <i class="fa-regular fa-circle-plus"></i></button>
+                        <button type="button" class="btn bg-white shadow rounded-pill fs-5">اقراء المزید... <i
+                                class="fa-regular fa-circle-plus"></i></button>
                     </a>
                 </div>
             </div>
         </div>
+        <!--         actions section -->
+        
+<!--         profile section -->
         <div class="profile bg-light-green pt-1 border-top-1">
             <div class="container py-4 px-4">
                 <div class="profile-information d-flex align-items-center justify-content-between">
@@ -178,22 +225,169 @@
                 </div>
             </div>
         </div>
+        <!--         profile section -->
+        
+        
+<!--         action section 2 -->
         <div class="actions bg-actions pb-4 pt-2">
             <div class="actions-container container">
                 <div class="head-of-actions">
                     <h2 class="text-color-prayers py-3 mb-0">اعمال الیوم الأربعاء</h2>
                 </div>
                 <div class="actions-for-days-of-the-week align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span><p class="d-inline-block m-0">احیاء</p>
+                    <span class="text-color pe-2 ps-0">1.</span>
+                    <p class="d-inline-block m-0">احیاء</p>
                 </div>
                 <div class="actions-for-days-of-the-week align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span><p class="d-inline-block m-0">احیاء</p>
+                    <span class="text-color pe-2 ps-0">1.</span>
+                    <p class="d-inline-block m-0">احیاء</p>
                 </div>
             </div>
         </div>
+        <!--         action section 2 -->
         
-    
-        <script src="static/assets/js/bootstrap.bundle.js"></script>
-        <script src="static/assets/js/all.js"></script>
+        <!--         owl section -->
+        <div class="owl-section bg-light-green py-3 pb-5">
+            <div class="head-of-owl pt-2 container pb-2">
+                <h3 class="text-color-prayers">ادعیة و زیاراة المعروفة</h3>
+            </div>
+            <div class="owl-carousel">
+                <div class="item px-3">
+                    <img src="./static/assets/images/Vector.svg" alt="prayer">
+                </div>
+                <div class="item px-3">
+                    <img src="./static/assets/images/Vector.svg" alt="prayer">
+                </div>
+                <div class="item px-3">
+                    <img src="./static/assets/images/Vector.svg" alt="prayer">
+                </div>
+                <div class="item px-3">
+                    <img src="./static/assets/images/Vector.svg" alt="prayer">
+                </div>
+                <div class="item px-3">
+                    <img src="./static/assets/images/Vector.svg" alt="prayer">
+                </div>
+                <div class="item px-3">
+                    <img src="./static/assets/images/Vector.svg" alt="prayer">
+                </div>
+            </div>
+        </div>
+        <!--         owl section         -->
+        
+        <!--         footer section -->
+        <div class="footer bg-footer pt-4">
+            <div class="container d-flex flex-column pt-2">
+                
+                <!--rafed saghafiye -->
+                <div class="rafed-saghafiye align-self-center">
+                    <a href="#">
+                        <img src="./static/assets/images/rafedsaghafiye%202.svg" alt="rafed saghafiye">
+                    </a>
+                </div>
+                <!--rafed saghafiye -->
+                
+                <!--socials -->
+                <div class="social d-flex justify-content-between w-75 m-auto pt-4">
+                    <div class="skype">
+                        <a href="#">
+                            <img src="./static/assets/images/Skyp.svg" alt="skype loge">
+                        </a>
+                    </div>
+                    <div class="twitter">
+                        <a href="#">
+                            <img src="./static/assets/images/Twitte.svg" alt="skype loge">
+                        </a>
+                    </div>
+                    <div class="whatsapp">
+                        <a href="#">
+                            <img src="./static/assets/images/WhatsUp.svg" alt="skype loge">
+                        </a>
+                    </div>
+                    <div class="facebook">
+                        <a href="#">
+                            <img src="./static/assets/images/Facebook.svg" alt="skype loge">
+                        </a>
+                    </div>
+                    <div class="instagram">
+                        <a href="#">
+                            <img src="./static/assets/images/Instgram.svg" alt="skype loge">
+                        </a>
+                    </div>
+                </div>
+                <!--socials -->
+                
+                <!--footer details-->
+                 <div class="details d-flex w-75 m-auto justify-content-between fs-2 py-4">
+                     <div class="concat">
+                         <span class="text-color-footer">ارتباط با ما</span>
+                     </div>
+                     <div class="abaut">
+                         <span class="text-color-footer">درباره ما</span>
+                     </div>
+                     <div class="language">
+                         <span class="text-color-footer">فارسی</span>
+                     </div>
+                 </div>
+                <!--footer details-->
+            </div>
+            <!--footer copyright-->
+            <div class="copyright bg-light-green pt-2">
+                <div class="container w-75 text-center">
+                    <span>
+                        شبکة رافد Copyright © 1998-2022 rafed.net. للتنمیة الثقافیة
+                    </span>
+                </div>
+            </div>
+            <!--footer copyright-->
+        </div>
+        <!--         footer section -->
+        
+        
+        <script src="./static/assets/js/bootstrap.bundle.js"></script>
+        <script src="./static/assets/js/all.js"></script>
+        
+        <!--         add jquery js -->
+        <script src="./static/assets/plugins/jquery/jquery.min.js"></script>
+        <!--         add jquery js -->
+        
+        <!--         owl js -->
+        <script src="./static/assets/plugins/owl/owl.carousel.js"></script>
+        <!--         owl js -->
+        
+        <script>
+            $(document).ready(function () {
+                $('.owl-carousel').owlCarousel({
+                    rtl: true,
+                    loop: true,
+                    dots: false,
+                    margin: 10,
+                    responsiveClass: true,
+                    responsive: {
+                        275: {
+                            items: 1
+                        },
+                        320: {
+                            items: 2.4
+                        },
+                        375: {
+                            items: 2.5
+                        },
+                        425: {
+                            items: 2.7
+                        },
+                        768: {
+                            items: 3.5
+                        },
+                        1024: {
+                            items: 4.5
+                        },
+                        1440: {
+                            items: 5.5
+                        },
+
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
