@@ -2,8 +2,14 @@
     box-sizing: border-box;
 }
 
+/*header*/
+
 .bg-header {
     background: #E2F0F1;
+}
+
+.width-element-header {
+    width: 50px;
 }
 
 .bg-light-green {
@@ -13,6 +19,12 @@
 .bg-searchbox {
     background: #E2F0F1;
 }
+
+/*header*/
+
+/*body*/
+/*calender*/
+
 
 .calendar-box-width {
     width: 70%;
@@ -46,7 +58,7 @@
     }
 }
 
-.text-color-footer {
+.text-color-prayers {
     color: #847048;
 }
 
@@ -64,4 +76,15 @@
     background: #E2F0F1;
     border: none;
     box-shadow: none;
+}
+
+.text-profile-color {
+    color: #1C6981;
+}
+
+.border-start-1 {
+    border-right: 0.5px solid black;
+}
+.border-top-1 {
+    border-top: 0.5px solid black;
 }

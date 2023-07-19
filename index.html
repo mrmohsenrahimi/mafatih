@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="static/assets/css/style.css">
     </head>
     <body>
-        <nav class="navbar bg-header" dir="ltr">
+        <nav class="navbar bg-header position-sticky top-0 w-100" dir="ltr">
             <div class="container-fluid d-flex justify-content-between px-4">
                 <div class="offcanvas offcanvas-start bg-light-green" dir="rtl" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                     <div class="offcanvas-header">
@@ -30,10 +30,10 @@
                         </form>
                     </div>
                 </div>
-                <div class="links">
-                    <div class="d-flex gap-3">
-                        <a href="#" class="text-dark"><i class="fa-regular fa-globe fa-2xl"></i></a>
-                        <a href="#" class="text-dark"><i class="fa-regular fa-circle-user fa-2xl"></i></a>
+                <div class="links width-element-header">
+                    <div class="d-flex gap-4">
+                        <a href="#" class="text-dark"><i class="fa-regular fa-globe fs-3"></i></a>
+                        <a href="#" class="text-dark"><i class="fa-regular fa-circle-user fs-3"></i></a>
                     </div>
                 </div>
                 <div class="icon-link">
@@ -41,7 +41,7 @@
                         <img src="static/assets/images/logo.png" alt="logo of site" width="60">
                     </a>
                 </div>
-                <div class="">
+                <div class="navbar-toggle width-element-header d-flex justify-content-end">
                     <button class="btn p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -86,9 +86,11 @@
                 </div>
             </div>
         </div>
-        <div class="actions bg-actions pt-2 pb-4">
-            <div class="footer-container container d-flex flex-column align-items-start pb-1">
-                <h2 class="head-of-footer text-color-footer py-3 align-self-center flex-nowrap">اعمال الخاصه في لیلة ۲۱ من رمضان (لیلة القدر)</h2>
+        <div class="actions bg-actions pt-2 pb-4 border-top-1">
+            <div class="actions-container container d-flex flex-column align-items-start pb-1">
+                <div class="head-of-prayers align-self-center">
+                    <h2 class="text-color-prayers py-3 mb-0">اعمال الخاصه في لیلة ۲۱ من رمضان (لیلة القدر)</h2>
+                </div>
                 <div class="actions-for-days-of-the-week d-flex align-items-center fs-3">
                     <span class="text-color pe-2 ps-0">1.</span><p class="d-inline-block m-0">احیاء</p>
                 </div>
@@ -114,13 +116,79 @@
                 </div>
             </div>
         </div>
-        <div class="profile bg-light-green pt-1">
-            <div class="container py-4  ">
-                <div class="profile-information d-flex ">
-                    <a href="#" class="text-dark"><i class="fa-regular fa-circle-user fa-2xl"></i></a>
-                    <span class="h2 ps-2 pe-0">محمد حسین علیزاده</span>
+        <div class="profile bg-light-green pt-1 border-top-1">
+            <div class="container py-4 px-4">
+                <div class="profile-information d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3 text-profile-color">
+                        <a href="#" class="text-profile-color"><i class="fa-regular fa-circle-user fa-2xl"></i></a>
+                        <span class="h3 m-0">محمد حسین علیزاده</span>
+                    </div>
+                    <div class="setting d-flex align-self-end">
+                        <a href="#" class="text-profile-color"><i class="fa-regular fa-gear fs-4"></i></a>
+                    </div>
                 </div>
-
+                <div class="profile-descriptions pt-4 d-flex justify-content-between">
+                    <div class="last-seen d-flex flex-column w-50">
+                        <div class="last-seen-head">
+                            <h3 class="text-profile-color">آخر مشاهدة</h3>
+                        </div>
+                        <div class="last-seen-things d-flex flex-column">
+                            <div class="thing fs-4">
+                                <span>زیارة عاشوراء</span>
+                            </div>
+                            <div class="thing fs-4">
+                                <span>زیارة عاشوراء</span>
+                            </div>
+                            <div class="thing fs-4">
+                                <span>زیارة عاشوراء</span>
+                            </div>
+                            <div class="thing fs-4">
+                                <span>زیارة عاشوراء</span>
+                            </div>
+                            <div class="thing fs-4">
+                                <span>زیارة عاشوراء</span>
+                            </div>
+                            <div class="thing fs-4">
+                                <span>زیارة عاشوراء</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last-search w-50 border-start-1 pe-3">
+                        <div class="last-search-head">
+                            <h3 class="text-profile-color">آخر بحث</h3>
+                        </div>
+                        <div class="last-search-things">
+                            <div class="search-thing fs-4">
+                                <span>اعمال شب قدر</span>
+                            </div>
+                            <div class="search-thing fs-4">
+                                <span>اعمال شب قدر</span>
+                            </div>
+                            <div class="search-thing fs-4">
+                                <span>اعمال شب قدر</span>
+                            </div>
+                            <div class="search-thing fs-4">
+                                <span>اعمال شب قدر</span>
+                            </div>
+                            <div class="search-thing fs-4">
+                                <span>اعمال شب قدر</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="actions bg-actions pb-4 pt-2">
+            <div class="actions-container container">
+                <div class="head-of-actions">
+                    <h2 class="text-color-prayers py-3 mb-0">اعمال الیوم الأربعاء</h2>
+                </div>
+                <div class="actions-for-days-of-the-week align-items-center fs-3">
+                    <span class="text-color pe-2 ps-0">1.</span><p class="d-inline-block m-0">احیاء</p>
+                </div>
+                <div class="actions-for-days-of-the-week align-items-center fs-3">
+                    <span class="text-color pe-2 ps-0">1.</span><p class="d-inline-block m-0">احیاء</p>
+                </div>
             </div>
         </div>
         
