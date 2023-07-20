@@ -27,6 +27,25 @@
 
 /*header*/
 
+
+/*TABS STYLE*/
+.bg-tabs {
+    background: #E2F0F1;
+}
+
+.text-color-tabs {
+    color: #1C6981;
+}
+
+.tab-hover:hover,
+.tab-hover:focus,
+.tab-hover:active {
+    color: #E2F0F1;
+    background: #1C6981;
+}
+/*TABS STYLE*/
+
+
 /*ofcanvas tabs accordion*/
 .accordion-button::after {
     flex-shrink: 0;
