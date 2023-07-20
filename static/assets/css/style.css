@@ -12,6 +12,11 @@
     width: 50px;
 }
 
+.bg-photo {
+    background: url("../images/nody-عکس-ضریح-امام-حسین-برای-پروفایل-1628285252 1.jpg");
+    background-size: cover;
+}
+
 .bg-light-green {
     background-color: #B8DBD9;
 }
@@ -31,7 +36,7 @@
 }
 
 .calendar-box-color {
-    background: #0C1F34;
+    background: rgb(12, 31, 52, 0.8);
 }
 
 .text-color {
@@ -95,4 +100,8 @@
 
 .text-color-footer {
     color: #B8DBD9;
+}
+
+.text-color-copyright {
+    color: #043353;
 }
