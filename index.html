@@ -25,7 +25,7 @@
                     <div class="offcanvas-header">
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body d-flex flex-column justify-content-between">
                         <div class="d-flex flex-column gap-3">
                             
                             <!--SEARCH BOX-->
@@ -54,7 +54,7 @@
                             <!--ACCORDIONS FOR TABS-->
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                                    <div class="accordion accordion-flush" id="accordionFlushExample-1">
+                                    <div class="accordion" id="accordionFlushExample-1">
                                         <div class="accordion-item">
                                             <h2 class="accordion-header">
                                                 <button class="accordion-button collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -123,8 +123,23 @@
                                 </div>
                             </div>
                             <!--ACCORDIONS FOR TABS-->
-                            
                         </div>
+                        <!--OFFCANCAS PROFILE-->
+                        <div class="d-flex align-items-center gap-3 text-profile-color justify-content-between">
+                            <a href="#" class="text-profile-color"><i class="fa-regular fa-circle-user fa-2xl"></i></a>
+                            <span class="h3 m-0">محمد حسین علیزاده</span>
+                            <div class="dropup">
+                                <span type="button" class="" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-caret-down fa-rotate-90"></i>
+                                </span>
+                                <ul class="dropdown-menu dropdown-menu-end dropup-bg-profile mb-3 rounded-4 p-0">
+                                    <li><a class="dropdown-item rounded-4" href="#">Action</a></li>
+                                    <li><a class="dropdown-item rounded-4" href="#">Action two</a></li>
+                                    <li><a class="dropdown-item rounded-4" href="#">Action three</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--OFFCANCAS PROFILE-->
                     </div>
                 </div>
                 <div class="links width-element-header">
@@ -197,7 +212,7 @@
 <!--         mention-the-days-of-the-week -->
         <div class="bg-light-green">
             <div class="mention-the-days-of-the-week container px-4 d-flex flex-column">
-                <h3 class="text-color-footer pt-4">ذکر الیوم الاربعاء</h3>
+                <h3 class="text-color-prayers pt-4">ذکر الیوم الاربعاء</h3>
                 <div class="mention align-self-center pb-3">
                     <img src="static/assets/images/Vector.png" alt="mention the days of the week" width="160">
                 </div>
@@ -404,11 +419,20 @@
                      <div class="concat">
                          <span class="text-color-footer">ارتباط با ما</span>
                      </div>
-                     <div class="abaut">
+                     <div class="about">
                          <span class="text-color-footer">درباره ما</span>
                      </div>
                      <div class="language">
-                         <span class="text-color-footer">فارسی</span>
+                         <div class="dropdown d-flex align-items-center">
+                             <div class="dropdown-toggle text-color-footer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                 فارسی
+                             </div>
+                             <ul class="dropdown-menu dropdown-menu-start">
+                                 <li><a class="dropdown-item" href="#">Action</a></li>
+                                 <li><a class="dropdown-item" href="#">Another action</a></li>
+                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
+                             </ul>
+                         </div>
                      </div>
                  </div>
                 <!--footer details-->
