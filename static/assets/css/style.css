@@ -1,3 +1,13 @@
+/*ROOT COLOR*/
+
+/*ROOT COLOR*/
+
+:root{
+    --Tlight-lightGreen: #E2F0F1;
+    --Tlight-green: #B8DBD9;
+    --Tlight-darkGreen: #1C6981;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -5,7 +15,7 @@
 /*header*/
 
 .bg-header {
-    background: #E2F0F1;
+    background: var(--Tlight-lightGreen);
 }
 
 .width-element-header {
@@ -18,11 +28,11 @@
 }
 
 .bg-light-green {
-    background-color: #B8DBD9;
+    background-color: var(--Tlight-green);
 }
 
 .bg-searchbox {
-    background: #E2F0F1;
+    background: var(--Tlight-lightGreen);
 }
 
 /*header*/
@@ -30,26 +40,21 @@
 
 /*TABS STYLE*/
 .bg-tabs {
-    background: #E2F0F1;
+    background: var(--Tlight-lightGreen) !important;
     transition: background-color .3s;
 }
 
 .text-color-tabs {
-    color: #1C6981;
+    color: var(--Tlight-darkGreen) !important;
     transition: color .3s;
 }
 
-/*.tab-hover:hover,*/
-/*.tab-hover:focus,*/
-.tab-hover:active {
-/*.tab-hover:visited */
-    color: #E2F0F1;
-    background: #1C6981;
-}
 
-.action {
-    color: #E2F0F1;
-    background: #1C6981;
+.nav-link:active,
+.activate {
+    background: var(--Tlight-darkGreen) !important;
+    color: var(--Tlight-lightGreen) !important;
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.25) inset;
 }
 /*TABS STYLE*/
 
@@ -70,7 +75,7 @@
 
 /*OFFCANVAS PROFILE*/
 .dropup-bg-profile {
-    background: #E2F0F1;
+    background: var(--Tlight-lightGreen);
 }
 /*OFFCANVAS PROFILE*/
 
@@ -103,7 +108,7 @@
 }
 
 .message-box-color {
-    background: #1C6981;
+    background: var(--Tlight-darkGreen);
 }
 
 @media screen and (min-width: 768px) {
@@ -117,7 +122,7 @@
 }
 
 .bg-actions {
-    background: #E2F0F1;
+    background: var(--Tlight-lightGreen);
 }
 
 .hover-none:hover {
@@ -127,19 +132,19 @@
 .hover-input-search:hover,
 .hover-input-search:focus,
 .hover-input-search:active {
-    background: #E2F0F1;
+    background: var(--Tlight-lightGreen);
     border: none;
     box-shadow: none;
 }
 
 .hover-boutton-search-box {
-    background: #E2F0F1;
+    background: var(--Tlight-lightGreen);
     border: none;
     box-shadow: none;
 }
 
 .text-profile-color {
-    color: #1C6981;
+    color: var(--Tlight-darkGreen);
 }
 
 .border-start-1 {
@@ -154,7 +159,7 @@
 }
 
 .text-color-footer {
-    color: #B8DBD9;
+    color: var(--Tlight-green);
 }
 
 .text-color-copyright {
