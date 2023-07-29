@@ -32,10 +32,10 @@
                             <div class="form-box pb-2">
                                 <form action="" enctype="multipart/form-data">
                                     <div class="d-flex rounded-pill">
-                                        <div class="d-flex rounded-pill">
-                                            <button type="button" class="btn p-2 rounded-0 rounded-start-5 bg-searchbox"><i class="fa-regular fa-sliders"></i></button>
-                                            <input type="text" name="name" class="form-control border-0 rounded-0 bg-searchbox" placeholder="البحث في المفاتیح الجنان">
-                                            <button type="button" class="btn p-2 rounded-0 rounded-end-5 bg-searchbox"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                        <div class="d-flex rounded-pill w-100">
+                                            <button type="button" class="filter-icon btn p-2 rounded-0 rounded-start-5 bg-searchbox"><i class="fa-regular fa-sliders"></i></button>
+                                            <input type="text" name="name" class="input-search form-control border-0 rounded-0 bg-searchbox" placeholder="البحث في المفاتیح الجنان">
+                                            <button type="button" class="icon-search btn p-2 rounded-0 rounded-end-5 bg-searchbox"><i class="fa-solid fa-magnifying-glass"></i></button>
                                         </div>
                                     </div>
                                 </form>
@@ -234,19 +234,57 @@
         <div class="bg-photo">
             <!--         search box -->
             <div class="container pt-5 px-4">
-                <div class="form-box py-5">
+                <div class="form-box pb-2">
                     <form action="" enctype="multipart/form-data">
                         <div class="d-flex rounded-pill">
-                            <button type="button" class="btn p-2 rounded-0 rounded-start-5 bg-searchbox"><i class="fa-regular fa-sliders"></i></button>
-                            <input type="text" name="name" class="form-control border-0 rounded-0 bg-searchbox" placeholder="البحث في المفاتیح الجنان">
-                            <button type="button" class="btn p-2 rounded-0 rounded-end-5 bg-searchbox"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <div class="d-flex rounded-pill w-100">
+                                <button type="button" class="filter-icon btn p-2 rounded-0 rounded-start-5 bg-searchbox"><i class="fa-regular fa-sliders"></i></button>
+                                <input type="text" name="name" class="input-search form-control border-0 rounded-0 bg-searchbox" placeholder="البحث في المفاتیح الجنان">
+                                <button type="button" class="icon-search btn p-2 rounded-0 rounded-end-5 bg-searchbox"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
                         </div>
                     </form>
                 </div>
+                </div>
                 <!--         search box -->
-        
+                
+                <!-- FILTER BOX -->
+                <div id="filterBox" class="filter-box flex-column bg-filter-box rounded-4 p-2">
+                    <div class="filter-checks py-1 ps-1 form-check m-0">
+                        <input class="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check1">
+                        <label class="form-check-label filter-text-color" for="filter-check1">
+                            البحث في جمیع المواضیع
+                        </label>
+                    </div>
+                    <div class="filter-checks py-1 ps-1 form-check m-0">
+                        <input class="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check2">
+                        <label class="form-check-label filter-text-color" for="filter-check2">
+                            البحث في الزیاراة
+                        </label>
+                    </div>
+                    <div class="filter-checks py-1 ps-1 form-check m-0">
+                        <input class="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check3">
+                        <label class="form-check-label filter-text-color" for="filter-check3">
+                            البحث في الأدعیة
+                        </label>
+                    </div>
+                    <div class="filter-checks py-1 ps-1 form-check m-0">
+                        <input class="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check4">
+                        <label class="form-check-label filter-text-color" for="filter-check4">
+                            البحث في الآعمال
+                        </label>
+                    </div>
+                    <div class="filter-checks py-1 ps-1 form-check m-0">
+                        <input class="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check5">
+                        <label class="form-check-label filter-text-color" for="filter-check5">
+                            البحث في النص
+                        </label>
+                    </div>
+                </div>
+                <!-- FILTER BOX -->
+                
                 <!--             calender -->
-                <div class="calendar mt-5 text-white pb-4">
+                <div class="calendar mt-3 text-white pb-4">
                     <div class="calender-box calendar-box-width m-auto calendar-box-color rounded-3">
                         <div class="d-flex flex-column align-items-center p-2">
                             <div class="calender-item py-2 fs-5"><span class="text-color">چهار شنه</span> ۱۱ <span
@@ -510,8 +548,9 @@
             <!--footer copyright-->
         </div>
         <!--         footer section -->
-        
-        
+    
+    
+        <script src="static/assets/js/index.js"></script>
         <script src="./static/assets/js/bootstrap.bundle.js"></script>
         <script src="./static/assets/js/all.js"></script>
         

@@ -220,6 +220,43 @@ ul.nav li.nav-item .active {
     color: #B4924D;
 }
 
+/*FILTER BOX*/
+.filter-box {
+    display: none;
+}
+
+.bg-filter-box {
+    background: var(--Tlight-lightGreen);
+}
+
+.filter-text-color {
+    color: var(--Tlight-darkGreen);
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: 0.35em;
+}
+
+.form-check-input {
+    accent-color: transparent;
+    background-color: white;
+    border: 2px solid var(--Tlight-darkGreen);
+}
+
+.form-check-input:focus {
+    border-color: var(--Tlight-darkGreen);
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-check-input:checked {
+    accent-color: var(--Tlight-lightGreen);
+    background-color: transparent;
+    color: var(--Tlight-veryDarkGreen);
+    border: 2px solid black;
+}
+/*FILTER BOX*/
+
 @media screen and (min-width: 768px) {
     .calendar-box-width {
         width: 40%;
