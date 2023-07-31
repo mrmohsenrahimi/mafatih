@@ -1,7 +1,4 @@
 /*ROOT COLOR*/
-
-/*ROOT COLOR*/
-
 :root {
     --Tlight-lightGreen: #E2F0F1;
     --Tlight-green: #B8DBD9;
@@ -10,6 +7,7 @@
     --Tlight-AccordionGreen1: #c4e7e4;
     --Tlight-AccordionGreen2: #cfecea;
 }
+/*ROOT COLOR*/
 
 * {
     box-sizing: border-box;
@@ -343,9 +341,70 @@ ul.nav li.nav-item .active {
 
 .bg-footer-reader {
     background: var(--Tlight-lightGreen);
+    box-shadow: 0px 0px 24px 12px rgba(0, 0, 0, 0.24);
 }
 
-/*PARYER STYLES*/
+.footer .themes {
+    width: 16px;
+    height: 19px;
+    flex-shrink: 0;
+    color: var(--Tlight-veryDarkGreen);
+    text-align: justify;
+    font-family: Vazirragular;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 100% */
+}
+
+.footer .themes .fa-sun-bright {
+    width: 9px;
+    height: 9px;
+    flex-shrink: 0;
+    stroke-width: 1.1px;
+    stroke: var(--Tlight-veryDarkGreen);
+}
+
+.footer .speed {
+    color: var(--Tlight-veryDarkGreen);
+    text-align: justify;
+    font-family: Vazirmatn;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 128.571% */
+    width: 36px;
+    height: 13px;
+    flex-shrink: 0;
+}
+
+.footer .play {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.footer .singer {
+    width: 68px;
+    height: 14px;
+    flex-shrink: 0;
+    color: var(--Tlight-veryDarkGreen);
+    text-align: justify;
+    font-family: Vazirragular;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px; /* 116.667% */
+}
+
+.footer .select-box {
+    width: 18px;
+    height: 22px;
+    flex-shrink: 0;
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+/*PRAYER STYLES*/
 .prayer {
     color: var(--Tlight-veryDarkGreen);
     text-align: justify;

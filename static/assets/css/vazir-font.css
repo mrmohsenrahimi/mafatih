@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'vazirregular';
+    src: url('../fonts/vazir-webfont.woff2') format('woff2'),
+    url('../fonts/vazir-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'vazirbold';
+    src: url('../fonts/vazir-bold-webfont.woff2') format('woff2'),
+    url('../fonts/vazir-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'vazirlight';
+    src: url('../fonts/vazir-light-webfont.woff2') format('woff2'),
+    url('../fonts/vazir-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'vazirmedium';
+    src: url('../fonts/vazir-medium-webfont.woff2') format('woff2'),
+    url('../fonts/vazir-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'vazirthin';
+    src: url('../fonts/vazir-thin-webfont.woff2') format('woff2'),
+    url('../fonts/vazir-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
