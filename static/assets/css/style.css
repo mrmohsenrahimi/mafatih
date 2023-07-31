@@ -19,6 +19,7 @@
 
 .bg-header {
     background: var(--Tlight-lightGreen);
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.24);
 }
 
 .width-element-header {
@@ -63,6 +64,14 @@ ul.nav li.nav-item .active {
 /*OFFCANVAS*/
 
 /*OFFCANVAS*/
+
+/**/
+.nav-item {
+    cursor: pointer;
+}
+
+/**/
+
 /*ofcanvas tabs accordion*/
 
 .accordion-item:nth-child(odd) {
@@ -203,7 +212,7 @@ ul.nav li.nav-item .active {
 
 
 .calendar-box-width {
-    width: 70%;
+    width: 78%;
 }
 
 .calendar-box-color {
@@ -214,6 +223,9 @@ ul.nav li.nav-item .active {
     color: #B4924D;
 }
 
+.calendar {
+    position: relative;
+}
 /*FILTER BOX*/
 .filter-box {
     display: none;
@@ -325,3 +337,24 @@ ul.nav li.nav-item .active {
 .text-color-copyright {
     color: #043353;
 }
+
+
+/*READER PAGE*/
+
+.bg-footer-reader {
+    background: var(--Tlight-lightGreen);
+}
+
+/*PARYER STYLES*/
+.prayer {
+    color: var(--Tlight-veryDarkGreen);
+    text-align: justify;
+    font-family: KFGQPC Uthman Taha Naskh;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 156.25% */
+}
+/*PARYER STYLES*/
+
+/*READER PAGE*/

@@ -4,33 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Index</title>
+        <title>Reader Page</title>
         <link rel="stylesheet" href="./static/assets/css/bootstrap.css">
         <link rel="stylesheet" href="./static/assets/css/bootstrap.rtl.css">
         <link rel="stylesheet" href="./static/assets/css/all.css">
         <link rel="stylesheet" href="./static/assets/css/style.css">
-        
-        <!--  OWL CSS -->
-        <link rel="stylesheet" href="./static/assets/plugins/owl/owl.carousel.css">
-        <link rel="stylesheet" href="./static/assets/plugins/owl/owl.theme.default.css">
-        <!--  END OWL CSS -->
-        
-        <!-- TREE CSS -->
-        <link rel="stylesheet" href="./static/assets/plugins/tree/tree.css">
-        <!-- END TREE CSS -->
     </head>
     <body>
-        
-        <!--         navbar -->
+        <!-- NAVBAR -->
         <nav class="navbar bg-header position-sticky top-0 w-100 z-1" dir="ltr">
-            <div class="container-fluid d-flex justify-content-between px-4">
+            <div class="container-fluid d-flex justify-content-between px-4 py-2">
                 <div class="offcanvas offcanvas-start bg-light-green" dir="rtl" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                     <div class="offcanvas-header">
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <div class="d-flex flex-column gap-3">
-                            
+                        
                             <!--SEARCH BOX-->
                             <div class="form-box pb-2">
                                 <form action="" enctype="multipart/form-data">
@@ -43,9 +33,9 @@
                                     </div>
                                 </form>
                             </div>
-    
+                        
                             <!--SEARCH BOX-->
-                            
+                        
                             <!--TABS IN OFCANVAS-->
                             <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
                                 <li class="nav-item w-50" role="presentation">
@@ -188,7 +178,7 @@
                                 </div>
                             </div>
                             <!--ACCORDIONS FOR TABS-->
-                            
+                        
                             <!--ACCORDIONS FOR TABS-->
                         </div>
                         <!--OFFCANCAS PROFILE-->
@@ -216,394 +206,66 @@
                     </div>
                 </div>
                 <div class="links width-element-header">
-                    <div class="d-flex gap-4">
-                        <a href="#" class="text-dark"><i class="fa-regular fa-globe fs-3"></i></a>
-                        <a href="#" class="text-dark"><i class="fa-regular fa-circle-user fs-3"></i></a>
+                    <div class="d-flex gap-4 align-items-center">
+                        <a href="#" class="text-dark"><i class="fa-solid fa-chevron-left fa-xl"></i></a>
+                        <a href="#" class="text-dark"><i class="fa-regular fa-bookmark fa-xl"></i></a>
                     </div>
                 </div>
                 <div class="icon-link">
                     <a class="navbar-brand" href="#">
-                        <img src="static/assets/images/logo.png" alt="logo of site" width="60">
+                        <img src="static/assets/images/زیارت%20عاشوراء.svg" alt="logo of site">
                     </a>
                 </div>
                 <div class="navbar-toggle width-element-header d-flex justify-content-end">
                     <button class="btn p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-                        <i class="fa-solid fa-bars fa-2xl"></i>                    </button>
+                        <i class="fa-solid fa-bars fa-2xl"></i>
+                    </button>
                 </div>
             </div>
         </nav>
-        <!--         navbar -->
+        <!-- NAVBAR -->
         
-        <div class="bg-photo">
-            <!--         search box -->
-            <div class="container pt-5 px-4">
-                <div class="form-box py-3">
-                    <form action="" enctype="multipart/form-data">
-                        <div class="form-items d-flex rounded-pill bg-searchbox">
-                            <button type="button" class="filter-icon btn p-2 rounded-0 rounded-start-5"><i class="fa-regular fa-sliders"></i></button>
-                            <input type="text" name="name" class="form-control border-0 rounded-0 bg-searchbox" placeholder="البحث في المفاتیح الجنان">
-                            <button type="button" class="btn p-2 rounded-0 rounded-end-5"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </div>
-                    </form>
-                </div>
-                <!--         search box -->
-                
-                <!-- FILTER BOX -->
-                <div id="filterBox" class="filter-box flex-column bg-filter-box rounded-4 p-2 position-absolute top-0 w-100">
-                    <div class="filter-checks py-1 ps-1 form-check m-0">
-                        <input class="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check1">
-                        <label class="form-check-label filter-text-color" for="filter-check1">
-                            البحث في جمیع المواضیع
-                        </label>
+        <!-- PRAYER BOX -->
+        <div class="prayer-box pt-4">
+            <div class="container">
+                <div class="text-of-prayer pt-2 d-flex flex-column align-items-center gap-4">
+                    <div class="head-prayer">
+                        <img src="./static/assets/images/بسم%20الله%20(6)%201.svg" alt="in the name of god in head of text prayer">
                     </div>
-                    <div class="filter-checks py-1 ps-1 form-check m-0">
-                        <input class="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check2">
-                        <label class="form-check-label filter-text-color" for="filter-check2">
-                            البحث في الزیاراة
-                        </label>
-                    </div>
-                    <div class="filter-checks py-1 ps-1 form-check m-0">
-                        <input class="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check3">
-                        <label class="form-check-label filter-text-color" for="filter-check3">
-                            البحث في الأدعیة
-                        </label>
-                    </div>
-                    <div class="filter-checks py-1 ps-1 form-check m-0">
-                        <input class="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check4">
-                        <label class="form-check-label filter-text-color" for="filter-check4">
-                            البحث في الآعمال
-                        </label>
-                    </div>
-                    <div class="filter-checks py-1 ps-1 form-check m-0">
-                        <input class="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check5">
-                        <label class="form-check-label filter-text-color" for="filter-check5">
-                            البحث في النص
-                        </label>
-                    </div>
-                </div>
-                <!-- FILTER BOX -->
-                
-                <!--             calender -->
-                <div class="calendar mt-3 text-white pb-4">
-                    <div class="calender-box calendar-box-width m-auto calendar-box-color rounded-3">
-                        <div class="d-flex flex-column align-items-center p-2">
-                            <div class="calender-item py-2 fs-5">
-                                <div class="w-100 text-center">
-                                    <span class="text-color">چهار شنه</span> ۱۱ <span class="text-color">اسفند</span> ۱۴۰۲
-                                </div>
-                            </div>
-                            <div class="calender-item py-2 fs-5">
-                                <div class="w-100 text-center">
-                                    <span class="text-color">الارابعاء</span> ۱۱ <span class="text-color">شعبان</span> ۱۴۴۶
-                                </div>
-                            </div>
-                            <div class="calender-item py-2">
-                                <div class="w-100 text-center">
-                                    2022 <span class="text-color">march</span> 11 <span class="text-color">wednesday</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--             calender -->
-        
-                <!--             message box -->
-                <div class="message mt-3 pb-5">
-                    <div class="message-box message-box-width d-flex justify-content-center mx-auto">
-                        <img src="./static/assets/images/Group%20107.svg" alt="A text to inform the site user" width="100%">
-                    </div>
-                </div>
-            </div>
-            <!--             message box -->
-        </div>
-    
-<!--         mention-the-days-of-the-week -->
-        <div class="bg-light-green">
-            <div class="mention-the-days-of-the-week container px-4 d-flex flex-column">
-                <h3 class="text-color-prayers pt-4">ذکر الیوم الاربعاء</h3>
-                <div class="mention align-self-center pb-3">
-                    <img src="static/assets/images/Vector.png" alt="mention the days of the week" width="160">
-                </div>
-            </div>
-        </div>
-        <!--         mention-the-days-of-the-week -->
-        
-<!--         actions section -->
-        <div class="actions bg-actions pt-2 pb-4 border-top-1">
-            <div class="actions-container container d-flex flex-column align-items-start pb-1">
-                <div class="head-of-prayers align-self-center">
-                    <h2 class="text-color-prayers py-3 mb-0">اعمال الخاصه في لیلة ۲۱ من رمضان (لیلة القدر)</h2>
-                </div>
-                <div class="actions-for-days-of-the-week d-flex align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span>
-                    <p class="d-inline-block m-0">احیاء</p>
-                </div>
-                <div class="actions-for-days-of-the-week align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span>
-                    <p class="d-inline-block m-0">احیاء</p>
-                </div>
-                <div class="actions-for-days-of-the-week align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span>
-                    <p class="d-inline-block m-0">احیاء</p>
-                </div>
-                <div class="actions-for-days-of-the-week align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span>
-                    <p class="d-inline-block m-0">احیاء</p>
-                </div>
-                <div class="actions-for-days-of-the-week align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span>
-                    <p class="d-inline-block m-0">احیاء</p>
-                </div>
-                <div class="actions-for-days-of-the-week align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span>
-                    <p class="d-inline-block m-0">احیاء</p>
-                </div>
-                <div class="button-for-actions align-self-center">
-                    <a href="#" class="hover-none">
-                        <button type="button" class="btn bg-white shadow rounded-pill fs-5">اقراء المزید... <i class="fa-regular fa-circle-plus"></i></button>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!--         actions section -->
-        
-<!--         profile section -->
-        <div class="profile bg-light-green pt-1 border-top-1">
-            <div class="container py-4 px-4">
-                <div class="profile-information d-flex align-items-center justify-content-between">
-                    <div class="d-flex align-items-center gap-3 text-profile-color">
-                        <a href="#" class="text-profile-color"><i class="fa-regular fa-circle-user fa-2xl"></i></a>
-                        <span class="h3 m-0">محمد حسین علیزاده</span>
-                    </div>
-                    <div class="setting d-flex align-self-end">
-                        <a href="#" class="text-profile-color"><i class="fa-regular fa-gear fs-4"></i></a>
-                    </div>
-                </div>
-                <div class="profile-descriptions pt-4 d-flex justify-content-between">
-                    <div class="last-seen d-flex flex-column w-50">
-                        <div class="last-seen-head">
-                            <h3 class="text-profile-color">آخر مشاهدة</h3>
-                        </div>
-                        <div class="last-seen-things d-flex flex-column">
-                            <div class="thing fs-4">
-                                <span>زیارة عاشوراء</span>
-                            </div>
-                            <div class="thing fs-4">
-                                <span>زیارة عاشوراء</span>
-                            </div>
-                            <div class="thing fs-4">
-                                <span>زیارة عاشوراء</span>
-                            </div>
-                            <div class="thing fs-4">
-                                <span>زیارة عاشوراء</span>
-                            </div>
-                            <div class="thing fs-4">
-                                <span>زیارة عاشوراء</span>
-                            </div>
-                            <div class="thing fs-4">
-                                <span>زیارة عاشوراء</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="last-search w-50 border-start-1 pe-3">
-                        <div class="last-search-head">
-                            <h3 class="text-profile-color">آخر بحث</h3>
-                        </div>
-                        <div class="last-search-things">
-                            <div class="search-thing fs-4">
-                                <span>اعمال شب قدر</span>
-                            </div>
-                            <div class="search-thing fs-4">
-                                <span>اعمال شب قدر</span>
-                            </div>
-                            <div class="search-thing fs-4">
-                                <span>اعمال شب قدر</span>
-                            </div>
-                            <div class="search-thing fs-4">
-                                <span>اعمال شب قدر</span>
-                            </div>
-                            <div class="search-thing fs-4">
-                                <span>اعمال شب قدر</span>
-                            </div>
-                        </div>
+                    <div class="prayer">
+                        <p>
+                            السَّلامُ عَلَیْکَ یَا أَبا عَبْدِاللّٰهِ، السَّلامُ عَلَیْکَ یَا ابْنَ رَسُولِ اللّٰهِ، السَّلامُ عَلَیْکَ یا خِیَرَهَ اللّٰهِ وَابْنَ خِیرَتِهِ، السَّلامُ عَلَیْکَ یَا ابْنَ أَمِیرِ الْمُؤْمِنِینَ، وَابْنَ سَیِّدِ الْوَصِیِّینَ، اَلسَّلامُ عَلَیْکَ یَابْنَ فاطِمَهَ سَیِّدَهِ نِساءِ الْعالَمینَ، اَلسَّلامُ عَلَیْکَ یا ثارَ اللّهِ وَ ابْنَ ثارِه، وَ الْوِتْرَ الْمَوْتُورَ، اَلسَّلامُ عَلَیْکَ وَ عَلَى الْاَرْواحِ الَّتى حَلَّتْ بِفِنائِکَ، عَلَیْکُمْ مِنّى جَمیعًا سَلامُ اللّهِ اَبَدًا ما بَقیتُ وَ بَقِىَ اللَّیْلُ وَ النَّهارُ. یا اَبا عَبْدِ اللّهِ، لَقَدْ عَظُمَتِ الرَّزِیَّهُ، وَ جَلَّتْ وَ عَظُمَتِ الْمُصیبَهُ بِکَ عَلَیْنا وَ عَلى جَمیعِ اَهْلِ الْاِسْلامِ، وَ جَلَّتْ وَ عَظُمَتْ مُصیبَتُکَ فِى السَّماواتِ عَلى جَمیعِ اَهْلِ السَّماواتِ، فَلَعَنَ اللّهُ اُمَّهً اَسَّسَتْ اَساسَ الظُّلْمِ وَ الْجَوْرِ عَلَیْکُمْ اَهْلَ الْبَیْتِ، وَ لَعَنَ اللّهُ اُمَّهً دَفَعَتْکُمْ عَنْ مَقامِکُمْ، وَ اَزالَتْکُمْ عَنْ مَراتِبِکُمُ الَّتى رَتَّبَکُمُ اللّهُ فیها، وَ لَعَنَ اللّهُ اُمَّهً قَتَلَتْکُمْ، وَ لَعَنَ اللّهُ الْمُمَهِّدینَ لَهُمْ بِـالَّتمْکینِ مِنْ قِتالِکُمْ، بَرِئْتُ اِلَى اللّهِ وَ اِلَیْکُمْ مِنْهُمْ وَ مِنْ اَشْیاعِهِمْ وَ اَتْباعِهِمْ وَ اَوْلِیائِهِمْ. یا اَبا عَبْدِ اللّهِ، اِنّى سِلْمٌ لِمَنْ سالَمَکُمْ وَ حَرْبٌ لِمَنْ حارَبَکُمْ اِلى یَوْمِ الْقِیامَهِ، وَ لَعَنَ اللّهُ آلَ زیادٍ وَ آلَ مَرْوانَ، وَ لَعَنَ اللّهُ بَنى اُمَیَّهَ قاطِبَهً، وَ لَعَنَ اللّهُ ابْنَ مَرْجانَهَ، وَ لَعَنَ اللّهُ عُمَرَ بْنَ سَعْدٍ، وَ لَعَنَ اللّهُ شِمْراً، وَ لَعَنَ اللّهُ اُمَّهً اَسْرَجَتْ وَ اَلجَمَتْ وَ تَنَقَّبَتْ لِقِتالِکَ. بِاَبى اَنْتَ وَ اُمّى لَقَدْ عَظُمَ مُصابى بِکَ، فَاَسْاَلُ اللّهَ الَّذى اَکْرَمَ مَقامَکَ وَ اَکْرَمَنى بِکَ، اَنْ یَرْزُقَنى طَلَبَ ثارِکَ مَعَ اِمامٍ مَنْصُورٍ مِنْ اَهْلِ بَیْتِ مُحَمَّدٍ صَلَّى اللّهُ عَلَیْهِ وَ آلِه. اَللّهُمَّ اجْعَلْنى عِنْدَکَ وَجیهًا بِـالْحُسَیْنِ عَلَیْهِ السّلامُ فِى الدُّنْیا وَ الاْخِرَهِ. یا اَبا عَبْدِ اللّهِ، اِنّى اَتَقَرَّبُ اِلَى اللّهِ وَ اِلى رَسُولِه وَ اِلى اَمیرِ الْمُؤْمِنینَ، وَ اِلى فاطِمَهَ وَ اِلَى الْحَسَنِ وَ اِلَیْکَ بِمُوالاتِکَ، وَ بِـالْبَراءَهِ مِمَّنْ قاتَلَکَ وَ نَصَبَ لَکَ الْحَرْبَ، وَ بِـالْبَراءَهِ مِمَّنْ اَسَّسَ اَساسَ الظُّلْمِ وَ الْجَوْرِ عَلَیْکُمْ، وَ اَبْرَاُ اِلَى اللّهِ وَ اِلى رَسُولِه مِمَّنْ اَسَّسَ اَساسَ ذلِکَ، وَ بَنى عَلَیْهِ بُنْیانَهُ، وَ جَرى فى ظُلْمِه وَ جَوْرِه عَلَیْکُمْ وَ عَلى اَشْیاعِکُمْ. بَرِئْتُ اِلَى اللّهِ وَ اِلَیْکُمْ مِنْهُمْ، وَ اَتَقَرَّبُ اِلَى اللّهِ ثُمَّ اِلَیْکُمْ بِمُوالاتِکُمْ وَ مُوالاهِ وَلیِّکُمْ، وَ بِـالْبَراءَهِ مِنْ اَعْدائِکُمْ وَ النّاصِبینَ لَکُمُ الْحَرْبَ، وَ بِـالْبَراءَهِ مِنْ اَشْیاعِهِمْ وَ اَتْباعِهِمْ.اِنّى سِلْمٌ لِمَنْ سالَمَکُمْ وَ حَرْبٌ لِمَنْ حارَبَکُمْ، وَ وَلِىٌّ لِمَنْ والاکُمْ وَ عَدُوٌّ لِمَنْ عاداکُمْ، فَاَسْاَلُ اللّهَ الَّذى اَکْرَمَنى بِمَعْرِفَتِکُمْ وَ مَعْرِفَهِ اَوْلِیائِکُمْ، وَ رَزَقَنِى الْبَراءَهَ مِنْ اَعْدائِکُمْ، اَنْ یَجْعَلَنى مَعَکُمْ فِى الدُّنْیا وَ الاْخِرَهِ، وَ اَنْ یُثَبِّتَ لى عِنْدَکُمْ قَدَمَ صِدْقٍ فِى الدُّنْیا وَ الاْخِرَهِ، وَ اَسْاَلُهُ اَنْ یُبَلِّغَنِى الْمَقامَ الْمَحْمُودَ لَکُمْ عِنْدَ اللّهِ، وَ اَنْ یَرْزُقَنى طَلَبَ ثارى (ثارِکُمْ) مَعَ اِمامٍ هُدًى (مَهْدىٍّ) ظاهِرٍ ناطِقٍ بِـالْحَقِّ مِنْکُمْ، وَ اَسْاَلُ اللّهَ بِحَقِّکُمْ وَ بِالشَّأْنِ الَّذى لَکُمْ عِنْدَهُ، اَنْ یُعْطِیَنى بِمُصابى بِکُمْ اَفْضَلَ ما یُعْطى مُصابًا بِمُـصیبَتِه؛ مُصیبَهً ما اَعْظَمَها وَ اَعْظَمَ رَزِیَّتَها فِى الْاِسْلامِ وَ فى جَمیعِ السَّماواتِ وَ الْاَرْضِ. اَللّهُمَّ اجْعَلْنى فى مَقامى هذا مِمَّنْ تَنالُهُ مِنْکَ صَلَواتٌ وَ رَحْمَهٌ وَ مَغْفِرَهٌ. اَللّهُمَّ اجْعَلْ مَحْیاىَ مَحْیا مُحَمَّدٍ وَ آلِ مُحَمَّدٍ، وَ مَماتى مَماتَ مُحَمَّدٍ وَ آلِ مُحَمَّدٍ. اَللّهُمَّ اِنَّ هذا یَوْمٌ تَبَرَّکَتْ بِه بَنُو اُمَیَّهَ، وَ ابْنُ آکِلَهِ الْاَ کْبادِ، اَللَّعینُ ابْنُ اللَّعینِ، عَلى لِسانِکَ وَ لِسانِ نَبِیِّکَ صَلَّى اللّهُ عَلَیْهِ وَ آلِه، فى کُلِّ مَوْطِنٍ وَ مَوْقِفٍ وَقَفَ فیهِ نَبِیُّکَ صَلَّى اللّهُ عَلَیْهِ وَ آلِه. اَللّهُمَّ الْعَنْ اَباسُفْیانَ وَ مُعاوِیَهَ وَ یَزیدَ بْنَ مُعاویَهَ، عَلَیْهِمْ مِنْکَ اللَّعْنَهُ اَبَدَ الاْبِدینَ، وَ هذا یَوْمٌ فَرِحَتْ بِه آلُ‏ زیادٍ وَ آلُ‏ مَرْوانَ بِقَتْلِهِمُ الْحُسَیْنَ صَلَواتُ اللّهِ عَلَیْهِ. اَللّهُمَّ فَضاعِفْ عَلَیْهِمُ اللَّعْنَ مِنْکَ وَ الْعَذابَ الاَلیمَ. اَللّهُمَّ اِنّى اَتَقَرَّبُ اِلَیْکَ فى هذَا الْیَوْمِ، وَ فى مَوْقِفى هذا، وَ اَیّامِ حَیاتى، بِـالْبَراءَهِ مِنْهُمْ وَ اللَّعْنَهِ عَلَیْهِمْ، وَ بِـالْمُوالاهِ لِنَبِیِّکَ وَ آلِ نَبِیِّکَ عَلَیْهِ وَ عَلَیْهِمُ السَّلامُ. سپس صد مرتبه بگوید: اَللّهُمَّ الْعَنْ اَوَّلَ ظالِمٍ ظَلَمَ حَقَّ مُحَمَّدٍ وَ آلِ مُحَمَّدٍ، وَ آخِرَ تابِعٍ لَهُ عَلى ذلِکَ. اَللّهُمَّ الْعَنِ الْعِصابَهَ الَّتى جاهَدَتِ الْحُسَیْنَ، وَ شایَعَتْ وَ بایَعَتْ وَ تابَعَتْ عَلى قَتْلِه. اَللّهُمَّ الْعَنْهُمْ جَمیعً.سپس صد مرتبه بگویید: اَلسَّلامُ عَلَیْکَ یا اَبا عَبْدِ اللّهِ، وَ عَلَى الْاَرْواحِ الَّتى حَلَّتْ بِفِنائِکَ، عَلَیْکَ مِنّى سَلامُ اللّهِ اَبَدًا ما بَقیتُ وَ بَقِىَ اللَّیْلُ وَ النَّهارُ، وَ لا جَعَلَهُ اللّهُ آخِرَ الْعَهْدِ مِنّى لِزِیارَتِکُمْ. اَلسَّلامُ عَلَى الْحُسَیْنِ وَ عَلى عَلىِّ بْنِ الْحُسَیْنِ وَ عَلى اَوْلادِ الْحُسَیْنِ وَ عَلى اَصْحابِ الْحُسَیْنِ. آنگاه بگوید: اَللّهُمَّ خُصَّ اَنْتَ اَوَّلَ ظالِمٍ بِاللَّعْنِ مِنّى، وَ ابْدَاْ بِه اَوَّلاً ثُمَّ الْعَنِ الثّانِىَ وَ الثّالِثَ وَ الرّابِعَ. اَللّهُمَّ الْعَنْ یَزیدَ خامِساً، وَ الْعَنْ عُبَیْدَ اللّهِ بْنَ زیادٍ وَ ابْنَ مَرْجانَهَ، وَ عُمَرَ بْنَ سَعْدٍ وَ شِمْراً، وَ آلَ اَبى سُفْیانَ وَ آلَ زیادٍ وَ آلَ مَرْوانَ اِلى یَوْمِ الْقِیامَهِ. سپس به سجده رفته و بگوید: اَللّهُمَّ لَکَ الْحَمْدُ حَمْدَ الشّاکِرینَ لَکَ عَلى مُصابِهِمْ، اَلحَمْدُ لِلّهِ عَلى عَظیمِ رَزِیَّتى. اَللّهُمَّ ارْزُقْنى شَفاعَهَ الْحُسَیْنِ یَوْمَ الْوُرُودِ، وَ ثَبِّتْ لى قَدَمَ صِدْقٍ عِنْدَکَ مَعَ الْحُسَیْنِ وَ اَصْحابِ الْحُسَیْنِ، اَلَّذینَ بَذَلُوا مُهَجَهُمْ دُونَ الْحُسَیْنِ عَلَیْهِ السَّلامُ.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <!--         profile section -->
+        <!-- PRAYER BOX -->
         
-        
-<!--         action section 2 -->
-        <div class="actions bg-actions pb-4 pt-2">
-            <div class="actions-container container">
-                <div class="head-of-actions">
-                    <h2 class="text-color-prayers py-3 mb-0">اعمال الیوم الأربعاء</h2>
-                </div>
-                <div class="actions-for-days-of-the-week align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span>
-                    <p class="d-inline-block m-0">احیاء</p>
-                </div>
-                <div class="actions-for-days-of-the-week align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span>
-                    <p class="d-inline-block m-0">احیاء</p>
+        <!-- FOOTER -->
+        <div class="footer bg-footer-reader position-sticky bottom-0 bg-footer-reader">
+            <div class="container-fluid p-1">
+                <div class="d-flex p-4 justify-content-between">
+                    <div class="themes">
+                        <span><i class="fa-sharp fa-regular fa-a"></i></i></span>
+                    </div>
+                    <div class="speed">
+                        <span>1.00x</span>
+                    </div>
+                    <div class="singer">
+                    
+                    </div>
+                    <div class="dropdown">
+                    
+                    </div>
                 </div>
             </div>
         </div>
-        <!--         action section 2 -->
+        <!-- FOOTER -->
         
-        <!--         owl section -->
-        <div class="owl-section bg-light-green py-3 pb-5">
-            <div class="head-of-owl pt-2 container pb-2">
-                <h3 class="text-color-prayers">ادعیة و زیاراة المعروفة</h3>
-            </div>
-            <div class="owl-carousel">
-                <div class="item px-3">
-                    <img src="./static/assets/images/Vector.svg" alt="prayer">
-                </div>
-                <div class="item px-3">
-                    <img src="./static/assets/images/Vector.svg" alt="prayer">
-                </div>
-                <div class="item px-3">
-                    <img src="./static/assets/images/Vector.svg" alt="prayer">
-                </div>
-                <div class="item px-3">
-                    <img src="./static/assets/images/Vector.svg" alt="prayer">
-                </div>
-                <div class="item px-3">
-                    <img src="./static/assets/images/Vector.svg" alt="prayer">
-                </div>
-                <div class="item px-3">
-                    <img src="./static/assets/images/Vector.svg" alt="prayer">
-                </div>
-            </div>
-        </div>
-        <!--         owl section         -->
         
-        <!--         footer section -->
-        <div class="footer bg-footer pt-4">
-            <div class="container d-flex flex-column pt-2">
-                
-                <!--rafed saghafiye -->
-                <div class="rafed-saghafiye align-self-center">
-                    <a href="#">
-                        <img src="./static/assets/images/rafedsaghafiye%202.svg" alt="rafed saghafiye" width="100%">
-                    </a>
-                </div>
-                <!--rafed saghafiye -->
-                
-                <!--socials -->
-                <div class="social d-flex justify-content-between w-75 m-auto pt-4">
-                    <div class="skype">
-                        <a href="#">
-                            <img src="./static/assets/images/Skyp.svg" alt="skype loge">
-                        </a>
-                    </div>
-                    <div class="twitter">
-                        <a href="#">
-                            <img src="./static/assets/images/Twitte.svg" alt="skype loge">
-                        </a>
-                    </div>
-                    <div class="whatsapp">
-                        <a href="#">
-                            <img src="./static/assets/images/WhatsUp.svg" alt="skype loge">
-                        </a>
-                    </div>
-                    <div class="facebook">
-                        <a href="#">
-                            <img src="./static/assets/images/Facebook.svg" alt="skype loge">
-                        </a>
-                    </div>
-                    <div class="instagram">
-                        <a href="#">
-                            <img src="./static/assets/images/Instgram.svg" alt="skype loge">
-                        </a>
-                    </div>
-                </div>
-                <!--socials -->
-                
-                <!--footer details-->
-                 <div class="details d-flex w-75 m-auto justify-content-between fs-2 py-4">
-                     <div class="concat">
-                         <span class="text-color-footer">ارتباط با ما</span>
-                     </div>
-                     <div class="about">
-                         <span class="text-color-footer">درباره ما</span>
-                     </div>
-                     <div class="language">
-                         <div class="dropup d-flex align-items-center">
-                             <div class="dropdown-toggle text-color-footer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                 فارسی
-                             </div>
-                             <ul class="dropdown-menu dropdown-menu-start">
-                                 <li><a class="dropdown-item" href="#">Action</a></li>
-                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
-                             </ul>
-                         </div>
-                     </div>
-                 </div>
-                <!--footer details-->
-            </div>
-            <!--footer copyright-->
-            <div class="copyright bg-light-green pt-2">
-                <div class="container w-75 text-center">
-                    <span class="text-color-copyright">
-                        شبکة رافد Copyright © 1998-2022 rafed.net للتنمیة الثقافیة
-                    </span>
-                </div>
-            </div>
-            <!--footer copyright-->
-        </div>
-        <!--         footer section -->
-    
-    
-        <script src="static/assets/js/index.js"></script>
+        
         <script src="./static/assets/js/bootstrap.bundle.js"></script>
-<!--         <script src="static/assets/js/bootstrap.js"></script> -->
         <script src="./static/assets/js/all.js"></script>
-        
-        <!--         add jquery js -->
-        <script src="./static/assets/plugins/jquery/jquery.min.js"></script>
-        <!--         add jquery js -->
-        
-        <!--         owl js -->
-        <script src="./static/assets/plugins/owl/owl.carousel.js"></script>
-        <!--         owl js -->
-        
-        <script>
-            $(document).ready(function () {
-                $('.owl-carousel').owlCarousel({
-                    rtl: true,
-                    loop: true,
-                    dots: false,
-                    margin: 10,
-                    responsiveClass: true,
-                    responsive: {
-                        275: {
-                            items: 1
-                        },
-                        320: {
-                            items: 2.4
-                        },
-                        375: {
-                            items: 2.5
-                        },
-                        425: {
-                            items: 2.7
-                        },
-                        768: {
-                            items: 3.5
-                        },
-                        1024: {
-                            items: 4.5
-                        },
-                        1440: {
-                            items: 5.5
-                        },
-
-                    }
-                });
-            });
-        </script>
     </body>
 </html>
