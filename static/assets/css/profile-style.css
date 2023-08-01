@@ -1,0 +1,13 @@
+@import "root-colors.css";
+@import "style.css";
+
+/*LOGIN STYLES*/
+.login-ask-text {
+    color: var(--Tlight-veryDarkGreen);
+    text-align: center;
+    font-family: Almarai;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+}
+/*LOGIN STYLES*/
