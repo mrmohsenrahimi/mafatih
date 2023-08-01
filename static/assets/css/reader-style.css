@@ -1,5 +1,21 @@
 @import "root-colors.css";
 @import "style.css";
+@import "kfg-font.css";
+/*@import "noto-sans.css";*/
+
+
+.content .prayer {
+    font-family: KFG;
+}
+
+.content .text {
+    font-family: "noto", sans-serif;
+    font-size: 1.4rem;
+}
+
+.content .quran {
+    color: var(--Tlight-veryDarkGreen);
+}
 
 .bg-footer-reader {
     background: var(--Tlight-lightGreen);
@@ -29,13 +45,13 @@
     font-weight: 700;
 }
 
-.footer .singer {
+.footer .singer button {
     color: var(--Tlight-veryDarkGreen);
     text-align: justify;
-    font-family: Vazirragular;
+    font-family: 'noto', sans-serif;
     font-size: 12px;
     font-style: normal;
-    font-weight: 700;
+    /*font-weight: 700;*/
 }
 
 /*PRAYER STYLES*/
@@ -46,4 +62,8 @@
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
+}
+
+.width-element-footer {
+    width: 30px;
 }
