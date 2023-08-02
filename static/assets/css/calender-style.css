@@ -1,0 +1,54 @@
+/*IMPORTED STYLES*/
+@import "root-colors.css";
+@import "style.css";
+/*IMPORTED STYLES*/
+
+* {
+    font-family: "noto", sans-serif;
+}
+
+.calender-bg-main-box {
+    background: var(--Tlight-green);
+}
+
+.calender-bg {
+    background: var(--Tlight-lightGreen);
+}
+
+.calendar-header {
+    color: var(--Tlight-veryDarkGreen);
+}
+
+.selected-date-type button {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.other-date-type {
+    color: var(--Tlight-calender-weekdays-color);
+    font-size: 10px;
+}
+
+.calender-weekdays {
+    color: var(--Tlight-calender-weekdays-color);
+}
+.calender-content {
+    box-shadow: 0 0 .5rem lightgray;
+    /*filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.10));*/
+    /*min-width: 300px;*/
+}
+
+.disable-days {
+    color: var(--Tlight-disable-days-color) !important;
+    border: none;
+}
+
+.day {
+    padding: 0;
+}
+
+.day:hover,
+.day:focus,
+.day:focus-within {
+    border: var(--Tlight-border-days-color) 1px solid !important;
+}

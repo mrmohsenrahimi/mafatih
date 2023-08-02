@@ -1,6 +1,8 @@
+/*IMPORTED STYLES*/
 /*ROOT COLOR*/
 @import "root-colors.css";
 /*ROOT COLOR*/
+/*IMPORTED STYLES*/
 
 /*FONT FAMILY*/
 @font-face {
@@ -221,7 +223,7 @@ ul.nav li.nav-item .active {
     color: #B4924D;
 }
 
-.calendar {
+.calendar-home-page {
     position: relative;
 }
 /*FILTER BOX*/

@@ -4,6 +4,10 @@
 /*@import "noto-sans.css";*/
 
 
+.prayer-box {
+    height: 100vh;
+}
+
 .content .prayer {
     font-family: KFG;
 }
@@ -51,7 +55,7 @@
     font-family: 'noto', sans-serif;
     font-size: 12px;
     font-style: normal;
-    /*font-weight: 700;*/
+    white-space: nowrap;
 }
 
 /*PRAYER STYLES*/

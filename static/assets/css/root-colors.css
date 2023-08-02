@@ -5,4 +5,7 @@
     --Tlight-veryDarkGreen: #0C1F34;
     --Tlight-AccordionGreen1: #c4e7e4;
     --Tlight-AccordionGreen2: #cfecea;
+    --Tlight-calender-weekdays-color: rgba(0, 0, 0, 0.50);
+    --Tlight-disable-days-color: rgba(0, 0, 0, 0.3);
+    --Tlight-border-days-color: rgba(0, 0, 0, 0.08);
 }
