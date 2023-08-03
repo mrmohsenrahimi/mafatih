@@ -45,10 +45,60 @@
 
 .day {
     padding: 0;
+    border: none;
 }
 
-.day:hover,
-.day:focus,
-.day:focus-within {
-    border: var(--Tlight-border-days-color) 1px solid !important;
+.date-font {
+    font-size: large;
+}
+
+.other-date-font {
+    font-size: 15px;
+    color: var(--Tlight-calender-weekdays-color);
+}
+
+.btn-today {
+    border: none !important;
+    background: var(--Tlight-calender-today-button);
+    border-radius: 10px !important;
+    box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.10);
+}
+
+.btn-today:hover {
+    box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.20);
+    background: var(--Tlight-calender-today-button);
+}
+
+.btn-today:active {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.30) !important;
+    background: var(--Tlight-calender-today-button) !important;
+}
+
+.today,
+.today:hover,
+.today:focus,
+.today:active,
+.today:focus-within {
+    border: var(--Tlight-calender-today-color) 1px solid !important;
+}
+
+.auspicious-day,
+.auspicious-day:hover,
+.auspicious-day:focus,
+.auspicious-day:active,
+.auspicious-day:focus-within {
+    border: var(--Tlight-calender-auspicious-day-border) 1px solid !important;
+}
+
+.holiday,
+.holiday:hover,
+.holiday:focus,
+.holiday:active,
+.holiday:focus-within,
+.holiday .other-date-font {
+    color: var(--Tlight-calender-holiday-color) !important;
+}
+
+.event-holiday {
+    color: var(--Tlight-calender-holiday-color);
 }

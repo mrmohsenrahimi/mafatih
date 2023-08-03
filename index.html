@@ -18,7 +18,7 @@
     <body>
         
         <!--         navbar -->
-        <nav class="navbar bg-header position-sticky top-0 w-100 z-1" dir="ltr">
+        <nav class="navbar bg-header position-sticky top-0 w-100 z-in-nav" dir="ltr">
             <div class="container-fluid d-flex justify-content-between px-4">
                 <div class="offcanvas offcanvas-start bg-light-green" dir="rtl" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                     <div class="offcanvas-header">
@@ -246,36 +246,38 @@
                 <!--         search box -->
                 
                 <!-- FILTER BOX -->
-                <div id="filterBox" class="filter-box flex-column bg-filter-box rounded-4 p-2 position-absolute top-0 w-100">
-                    <div class="filter-checks py-1 ps-1 form-check m-0">
-                        <input class="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check1">
-                        <label class="form-check-label filter-text-color" for="filter-check1">
-                            البحث في جمیع المواضیع
-                        </label>
-                    </div>
-                    <div class="filter-checks py-1 ps-1 form-check m-0">
-                        <input class="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check2">
-                        <label class="form-check-label filter-text-color" for="filter-check2">
-                            البحث في الزیاراة
-                        </label>
-                    </div>
-                    <div class="filter-checks py-1 ps-1 form-check m-0">
-                        <input class="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check3">
-                        <label class="form-check-label filter-text-color" for="filter-check3">
-                            البحث في الأدعیة
-                        </label>
-                    </div>
-                    <div class="filter-checks py-1 ps-1 form-check m-0">
-                        <input class="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check4">
-                        <label class="form-check-label filter-text-color" for="filter-check4">
-                            البحث في الآعمال
-                        </label>
-                    </div>
-                    <div class="filter-checks py-1 ps-1 form-check m-0">
-                        <input class="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check5">
-                        <label class="form-check-label filter-text-color" for="filter-check5">
-                            البحث في النص
-                        </label>
+                <div class="filter position-relative">
+                    <div id="filterBox" class="filter-box flex-column bg-filter-box rounded-4 p-2 position-absolute top-0 w-100 z-3">
+                        <div class="filter-checks py-1 ps-1 form-check m-0">
+                            <input class="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check1">
+                            <label class="form-check-label filter-text-color" for="filter-check1">
+                                البحث في جمیع المواضیع
+                            </label>
+                        </div>
+                        <div class="filter-checks py-1 ps-1 form-check m-0">
+                            <input class="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check2">
+                            <label class="form-check-label filter-text-color" for="filter-check2">
+                                البحث في الزیاراة
+                            </label>
+                        </div>
+                        <div class="filter-checks py-1 ps-1 form-check m-0">
+                            <input class="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check3">
+                            <label class="form-check-label filter-text-color" for="filter-check3">
+                                البحث في الأدعیة
+                            </label>
+                        </div>
+                        <div class="filter-checks py-1 ps-1 form-check m-0">
+                            <input class="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check4">
+                            <label class="form-check-label filter-text-color" for="filter-check4">
+                                البحث في الآعمال
+                            </label>
+                        </div>
+                        <div class="filter-checks py-1 ps-1 form-check m-0">
+                            <input class="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check5">
+                            <label class="form-check-label filter-text-color" for="filter-check5">
+                                البحث في النص
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <!-- FILTER BOX -->
@@ -328,36 +330,32 @@
 <!--         actions section -->
         <div class="actions bg-actions pt-2 pb-4 border-top-1">
             <div class="actions-container container d-flex flex-column align-items-start pb-1">
-                <div class="head-of-prayers align-self-center">
-                    <h2 class="text-color-prayers py-3 mb-0">اعمال الخاصه في لیلة ۲۱ من رمضان (لیلة القدر)</h2>
+                <div class="head-of-prayers">
+                    <h3 class="text-color-prayers py-3 mb-0">مناسبت ها</h3>
                 </div>
-                <div class="actions-for-days-of-the-week d-flex align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span>
+                <div class="actions-for-days-of-the-week align-items-center fs-5">
+                    <span class="text-color ps-0">1.</span>
                     <p class="d-inline-block m-0">احیاء</p>
                 </div>
-                <div class="actions-for-days-of-the-week align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span>
+                <div class="actions-for-days-of-the-week align-items-center fs-5">
+                    <span class="text-color ps-0">2.</span>
                     <p class="d-inline-block m-0">احیاء</p>
                 </div>
-                <div class="actions-for-days-of-the-week align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span>
+                <div class="actions-for-days-of-the-week align-items-center fs-5">
+                    <span class="text-color ps-0">3.</span>
                     <p class="d-inline-block m-0">احیاء</p>
                 </div>
-                <div class="actions-for-days-of-the-week align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span>
+                <div class="actions-for-days-of-the-week align-items-center fs-5">
+                    <span class="text-color ps-0">4.</span>
                     <p class="d-inline-block m-0">احیاء</p>
                 </div>
-                <div class="actions-for-days-of-the-week align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span>
+                <div class="actions-for-days-of-the-week align-items-center fs-5">
+                    <span class="text-color ps-0">5.</span>
                     <p class="d-inline-block m-0">احیاء</p>
                 </div>
-                <div class="actions-for-days-of-the-week align-items-center fs-3">
-                    <span class="text-color pe-2 ps-0">1.</span>
-                    <p class="d-inline-block m-0">احیاء</p>
-                </div>
-                <div class="button-for-actions align-self-center">
+                <div class="button-for-actions align-self-center pt-3">
                     <a href="#" class="hover-none">
-                        <button type="button" class="btn bg-white shadow rounded-pill fs-5">اقراء المزید... <i class="fa-regular fa-circle-plus"></i></button>
+                        <button type="button" class="btn bg-white shadow rounded-pill fs-6">اقراء المزید... <i class="fa-regular fa-circle-plus"></i></button>
                     </a>
                 </div>
             </div>
@@ -519,7 +517,7 @@
                 <!--socials -->
                 
                 <!--footer details-->
-                 <div class="details d-flex w-75 m-auto justify-content-between fs-2 py-4">
+                 <div class="details d-flex w-100 m-auto justify-content-around fs-6 py-4">
                      <div class="concat">
                          <span class="text-color-footer">ارتباط با ما</span>
                      </div>
@@ -542,8 +540,8 @@
                 <!--footer details-->
             </div>
             <!--footer copyright-->
-            <div class="copyright bg-light-green pt-2">
-                <div class="container w-75 text-center">
+            <div class="copyright bg-light-green py-2">
+                <div class="container w-75 d-flex align-items-center justify-content-center text-center">
                     <span class="text-color-copyright">
                         شبکة رافد Copyright © 1998-2022 rafed.net للتنمیة الثقافیة
                     </span>

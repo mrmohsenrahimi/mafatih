@@ -8,3 +8,8 @@ function displayFilter() {
 }
 
 filterIcon.addEventListener("click", displayFilter);
+
+
+/*CHANGE NUMBERS*/
+
+/*CHANGE NUMBERS*/

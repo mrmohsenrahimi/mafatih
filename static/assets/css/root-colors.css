@@ -8,4 +8,8 @@
     --Tlight-calender-weekdays-color: rgba(0, 0, 0, 0.50);
     --Tlight-disable-days-color: rgba(0, 0, 0, 0.3);
     --Tlight-border-days-color: rgba(0, 0, 0, 0.08);
+    --Tlight-calender-today-button: #D5BB9D ;
+    --Tlight-calender-today-color: #B9966D ;
+    --Tlight-calender-holiday-color: #c20000b8;
+    --Tlight-calender-auspicious-day-border: #0000007d;
 }

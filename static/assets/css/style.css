@@ -13,9 +13,14 @@
 
 * {
     box-sizing: border-box;
+    font-family: noto, sans-serif;
 }
 
 /*header*/
+
+.z-in-nav {
+    z-index: 1450;
+}
 
 .bg-header {
     background: var(--Tlight-lightGreen);
