@@ -33,6 +33,7 @@
 
 /*DROPDOWN IN HEADER*/
 .dropdown-menu-header.dropdown-menu .dropdown-item:active,
+.dropdown-menu-header.dropdown-menu .dropdown-item:hover,
 .dropdown-menu-header.dropdown-menu .dropdown-item:focus-within {
     background: var(--Tlight-brown);
     color: var(--Tlight-black);
@@ -40,7 +41,7 @@
 
 .dropdown-menu-header.dropdown-menu.show {
     display: flex;
-    gap: 1rem;
+    gap: .3rem;
     background: none;
     border: none;
 }
