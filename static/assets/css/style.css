@@ -31,6 +31,28 @@
     width: 50px;
 }
 
+/*DROPDOWN IN HEADER*/
+.dropdown-menu-header.dropdown-menu .dropdown-item:active,
+.dropdown-menu-header.dropdown-menu .dropdown-item:focus-within {
+    background: var(--Tlight-brown);
+    color: var(--Tlight-black);
+}
+
+.dropdown-menu-header.dropdown-menu.show {
+    display: flex;
+    gap: 1rem;
+    background: none;
+    border: none;
+}
+
+.dropdown-menu-header.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    right: auto;
+    margin-top: var(--bs-dropdown-spacer);
+}
+
+/*DROPDOWN IN HEADER*/
+
 .bg-photo {
     background: url("../images/nody-عکس-ضریح-امام-حسین-برای-پروفایل-1628285252 1.jpg");
     background-size: cover;
@@ -199,7 +221,7 @@ ul.nav li.nav-item .active {
 /*ofcanvas tabs accordion*/
 
 /*OFFCANVAS PROFILE*/
-.dropup-bg-profile {
+.dropdown-bg-color {
     background: var(--Tlight-lightGreen);
 }
 
