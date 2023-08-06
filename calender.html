@@ -300,17 +300,17 @@
                     </div>
                     <div class="calender-content d-flex flex-column gap-3 p-3 px-4 mb-3 rounded-4">
                         <div class="calender-weekdays bg-light-green d-flex justify-content-between gap-1 row flex-nowrap rounded-4">
-                            <button class="day btn col">ش</button>
-                            <button class="day btn col">ی</button>
-                            <button class="day btn col">د</button>
-                            <button class="day btn col">س</button>
-                            <button class="day btn col">چ</button>
-                            <button class="day btn col">پ</button>
-                            <button class="day btn col">ج</button>
+                            <button type="button" class="day btn col">ش</button>
+                            <button type="button" class="day btn col">ی</button>
+                            <button type="button" class="day btn col">د</button>
+                            <button type="button" class="day btn col">س</button>
+                            <button type="button" class="day btn col">چ</button>
+                            <button type="button" class="day btn col">پ</button>
+                            <button type="button" class="day btn col">ج</button>
                         </div>
                         <div class="days d-flex flex-column gap-1">
                             <div class="d-flex justify-content-between gap-1 row flex-nowrap rounded-4">
-                                <button class="day btn col disable-days disabled">
+                                <button type="button" class="day btn col disable-days disabled">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">29</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -319,7 +319,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col disable-days disabled">
+                                <button type="button" class="day btn col disable-days disabled">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">30</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -328,7 +328,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col disable-days disabled">
+                                <button type="button" class="day btn col disable-days disabled">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">31</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -337,7 +337,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col today">
+                                <button type="button" class="day btn col today">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">1</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -346,7 +346,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">2</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -355,7 +355,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">3</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -364,7 +364,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col holiday">
+                                <button type="button" class="day btn col holiday">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">4</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -375,7 +375,7 @@
                                 </button>
                             </div>
                             <div class="d-flex justify-content-between gap-1 row flex-nowrap rounded-4">
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">5</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -384,7 +384,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col auspicious-day">
+                                <button type="button" class="day btn col auspicious-day" data-bs-toggle="modal" data-bs-target="#staticModalBackdrop">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">6</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -393,7 +393,72 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <div class="modal fade" id="staticModalBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable justify-content-center">
+                                        <div class="modal-content">
+                                            <div class="modal-header align-items-center">
+                                                <h2 class="modal-title fs-6 text-brown fw-bolder" id="staticBackdropLabel">اعمال الخاصة في لیلة 9 من محرم</h2>
+                                                <button type="button" class="btn-close p-1 m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="actions-for-days-of-the-week align-items-center fs-5">
+                                                    <span class="text-brown ps-0">1.</span>
+                                                    <p class="d-inline-block m-0">احیاء</p>
+                                                </div>
+                                                <div class="actions-for-days-of-the-week align-items-center fs-5">
+                                                    <span class="text-brown ps-0">2.</span>
+                                                    <p class="d-inline-block m-0">احیاء</p>
+                                                </div>
+                                                <div class="actions-for-days-of-the-week align-items-center fs-5">
+                                                    <span class="text-brown ps-0">3.</span>
+                                                    <p class="d-inline-block m-0">احیاء</p>
+                                                </div>
+                                                <div class="actions-for-days-of-the-week align-items-center fs-5">
+                                                    <span class="text-brown ps-0">4.</span>
+                                                    <p class="d-inline-block m-0">احیاء</p>
+                                                </div>
+                                                <div class="actions-for-days-of-the-week align-items-center fs-5">
+                                                    <span class="text-brown ps-0">5.</span>
+                                                    <p class="d-inline-block m-0">احیاء</p>
+                                                </div>
+                                                <div class="actions-for-days-of-the-week align-items-center fs-5">
+                                                    <span class="text-brown ps-0">2.</span>
+                                                    <p class="d-inline-block m-0">احیاء</p>
+                                                </div>
+                                                <div class="actions-for-days-of-the-week align-items-center fs-5">
+                                                    <span class="text-brown ps-0">3.</span>
+                                                    <p class="d-inline-block m-0">احیاء</p>
+                                                </div>
+                                                <div class="actions-for-days-of-the-week align-items-center fs-5">
+                                                    <span class="text-brown ps-0">4.</span>
+                                                    <p class="d-inline-block m-0">احیاء</p>
+                                                </div>
+                                                <div class="actions-for-days-of-the-week align-items-center fs-5">
+                                                    <span class="text-brown ps-0">5.</span>
+                                                    <p class="d-inline-block m-0">احیاء</p>
+                                                </div>
+                                                <div class="actions-for-days-of-the-week align-items-center fs-5">
+                                                    <span class="text-brown ps-0">2.</span>
+                                                    <p class="d-inline-block m-0">احیاء</p>
+                                                </div>
+                                                <div class="actions-for-days-of-the-week align-items-center fs-5">
+                                                    <span class="text-brown ps-0">3.</span>
+                                                    <p class="d-inline-block m-0">احیاء</p>
+                                                </div>
+                                                <div class="actions-for-days-of-the-week align-items-center fs-5">
+                                                    <span class="text-brown ps-0">4.</span>
+                                                    <p class="d-inline-block m-0">احیاء</p>
+                                                </div>
+                                                <div class="actions-for-days-of-the-week align-items-center fs-5">
+                                                    <span class="text-brown ps-0">5.</span>
+                                                    <p class="d-inline-block m-0">احیاء</p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer p-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">7</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -402,7 +467,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">8</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -411,7 +476,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">9</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -420,7 +485,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">10</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -429,7 +494,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col holiday">
+                                <button type="button" class="day btn col holiday">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">11</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -440,7 +505,7 @@
                                 </button>
                             </div>
                             <div class="d-flex justify-content-between gap-1 row flex-nowrap rounded-4">
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">12</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -449,7 +514,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">13</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -458,7 +523,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">14</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -467,7 +532,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">15</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -476,7 +541,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">16</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -485,7 +550,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">17</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -494,7 +559,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col holiday">
+                                <button type="button" class="day btn col holiday">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">18</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -505,7 +570,7 @@
                                 </button>
                             </div>
                             <div class="d-flex justify-content-between gap-1 row flex-nowrap rounded-4">
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">19</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -514,7 +579,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">20</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -523,7 +588,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">21</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -532,7 +597,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">22</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -541,7 +606,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">23</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -550,7 +615,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">24</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -559,7 +624,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">25</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -570,7 +635,7 @@
                                 </button>
                             </div>
                             <div class="d-flex justify-content-between gap-1 row flex-nowrap rounded-4">
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">26</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -579,7 +644,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">27</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -588,7 +653,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">28</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -597,7 +662,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">29</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -606,7 +671,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col">
+                                <button type="button" class="day btn col">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">30</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -615,7 +680,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col disable-days disabled">
+                                <button type="button" class="day btn col disable-days disabled">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">1</span>
                                         <span class="other-date d-flex justify-content-evenly">
@@ -624,7 +689,7 @@
                                         </span>
                                     </span>
                                 </button>
-                                <button class="day btn col disable-days disabled">
+                                <button type="button" class="day btn col disable-days disabled">
                                     <span class="d-flex flex-column">
                                         <span class="shamsi-date date-font">29</span>
                                         <span class="other-date d-flex justify-content-evenly">

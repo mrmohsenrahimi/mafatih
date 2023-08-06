@@ -39,7 +39,7 @@
 }
 
 .disable-days {
-    color: var(--Tlight-disable-days-color) !important;
+    color: var(--Tlight-light-black) !important;
     border: none;
 }
 
@@ -102,3 +102,24 @@
 .event-holiday {
     color: var(--Tlight-calender-holiday-color);
 }
+
+/*MODALS STYLE*/
+.modal-dialog {
+    height: 40vh;
+}
+
+.modal-content {
+    background: var(--Tlight-green);
+    height: 24.125rem;
+    width: 20rem;
+}
+
+.modal-content .modal-header, .modal-footer {
+    border: none;
+}
+
+.modal-dialog .modal-header .modal-title {
+    padding: .5rem 0 1rem 0;
+    border-bottom: var(--Tlight-light-black) 1px solid;
+}
+/*MODALS STYLE*/

@@ -29,7 +29,7 @@
 .footer .themes > {
     color: var(--Tlight-veryDarkGreen);
     text-align: justify;
-    font-family: Vazirragular;
+    font-family: noto, sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -43,7 +43,7 @@
 .footer .speed > {
     color: var(--Tlight-veryDarkGreen);
     text-align: justify;
-    font-family: Vazirragular;
+    font-family: noto, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -52,7 +52,7 @@
 .footer .singer button {
     color: var(--Tlight-veryDarkGreen);
     text-align: justify;
-    font-family: 'noto', sans-serif;
+    font-family: noto, sans-serif;
     font-size: 12px;
     font-style: normal;
     white-space: nowrap;

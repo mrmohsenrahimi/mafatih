@@ -247,10 +247,6 @@ ul.nav li.nav-item .active {
     background: rgb(12, 31, 52, 0.65);
 }
 
-.text-color {
-    color: #B4924D;
-}
-
 .calendar-home-page {
     position: relative;
 }
@@ -365,3 +361,19 @@ ul.nav li.nav-item .active {
 .text-color-copyright {
     color: #043353;
 }
+
+.text-brown {
+    color: var(--Tlight-brown);
+}
+
+/*SCROLLBAR STYLE*/
+*::-webkit-scrollbar {
+    width: 0.2rem;
+    background-color: var(--Tlight-light-black);
+}
+
+*::-webkit-scrollbar-thumb, *::-webkit-scrollbar-thumb {
+    background-color: var(--Tlight-middle-black);
+    border-radius: 4px;
+}
+/*SCROLLBAR STYLE*/
