@@ -9,6 +9,8 @@
     font-family: 'noto';
     src: url(../fonts/NotoSansArabic-Regular.woff2) format('woff2');
 }
+
+@import "regular.css";
 /*FONT FAMILY*/
 
 * {
@@ -55,7 +57,7 @@
 /*DROPDOWN IN HEADER*/
 
 .bg-photo {
-    background: url("../images/nody-عکس-ضریح-امام-حسین-برای-پروفایل-1628285252 1.jpg");
+    background: url("../images/imam-hossein.jpg");
     background-size: cover;
 }
 
