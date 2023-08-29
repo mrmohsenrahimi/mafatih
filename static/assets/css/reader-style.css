@@ -21,6 +21,10 @@
     color: var(--Tlight-veryDarkGreen);
 }
 
+.footer-z {
+    z-index: 1040;
+}
+
 .bg-footer-reader {
     background: var(--Tlight-lightGreen);
     box-shadow: 0px 0px 24px 12px rgba(0, 0, 0, 0.24);
@@ -70,4 +74,12 @@
 
 .width-element-footer {
     width: 30px;
+}
+
+
+.setting-select {
+    /*padding: 0.25rem;*/
+    border-radius: 0.25rem;
+    border: 1px lightgray solid !important;
+    box-shadow: 0 0 1rem lightgray;
 }

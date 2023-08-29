@@ -10,7 +10,6 @@
     src: url(../fonts/NotoSansArabic-Regular.woff2) format('woff2');
 }
 
-@import "regular.css";
 /*FONT FAMILY*/
 
 * {
@@ -22,6 +21,19 @@
 
 .z-in-nav {
     z-index: 1450;
+}
+
+.offcanvas.offcanvas-start {
+    padding-top: 5rem;
+}
+
+.btn-close-offcanvas {
+    transition: 0.5s;
+}
+
+.close-offcanvas-start {
+    transition: 0.5s;
+    transform: rotate(270deg);
 }
 
 .bg-header {
