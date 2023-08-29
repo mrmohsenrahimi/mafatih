@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="./static/assets/css/bootstrap.rtl.css">
         <link rel="stylesheet" href="./static/assets/css/all.css">
         <link rel="stylesheet" href="./static/assets/css/reader-style.css">
-<!--         <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+        <!--         <link rel="preconnect" href="https://fonts.googleapis.com"> -->
 <!--         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
 <!--         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap" rel="stylesheet"> -->
     </head>
@@ -58,7 +58,7 @@
         <!-- NAVBAR -->
         
         <!-- OFFCANVAS NAV -->
-        <div class="offcanvas offcanvas-start bg-light-green d-flex" dir="rtl" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas offcanvas-start bg-light-green z-in-nav-offcanvas" dir="rtl" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
             <div class="offcanvas-body">
                 <div class="d-flex flex-column gap-3">
                 
@@ -286,7 +286,6 @@
                         <button class="btn setting-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
                             <i class="fa-regular fa-gear fa-xl"></i>
                         </button>
-                        
                     </div>
                     <div class="speed width-element-footer">
                         <button class="btn border-0 p-0">1.00x</button>
@@ -310,7 +309,7 @@
         <!-- FOOTER -->
         
         <!-- OFFCANVAS FOOTER -->
-        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel" data-bs-backdrop="static">
+        <div class="offcanvas offcanvas-bottom pb-5 z-in-footer-offcanvas" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel" data-bs-backdrop="static">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -326,8 +325,8 @@
         <script src="./static/assets/js/bootstrap.bundle.js"></script>
         <script src="./static/assets/js/all.js"></script>
         <!-- MY JAVASCRIPT -->
-        <script src="./static/assets/js/index.js"></script>
         <script src="./static/assets/js/reader.js"></script>
+        <script src="static/assets/js/header.js"></script>
         <!-- MY JAVASCRIPT -->
     </body>
 </html>

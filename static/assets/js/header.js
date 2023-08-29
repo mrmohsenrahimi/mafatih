@@ -1,5 +1,6 @@
 /*OFFCANVAS CLOSE BUTTON*/
 const barsClose = document.getElementById("bars-close");
+const footer = document.querySelector(".footer");
 
 barsClose.addEventListener("click", function () {
     if (!barsClose.classList.contains("close-offcanvas-start")) {
@@ -11,19 +12,6 @@ barsClose.addEventListener("click", function () {
         barsClose.classList.add("btn-close-offcanvas");
         barsClose.innerHTML = `<i class="fa-solid fa-bars fa-xl"></i>`
     }
-})
+    footer.classList.toggle("z-1000");
+});
 /*OFFCANVAS CLOSE BUTTON*/
-
-
-/*DISPLAY FILTERBOX*/
-const filterIcon = document.querySelector(".filter-icon");
-const filterBox = document.querySelector(".filter-box");
-const calendar = document.querySelector(".calendar");
-
-function displayFilter() {
-    filterBox.classList.toggle("d-flex");
-    calendar.appendChild(filterBox); // اضافه کردن فیلتر باکس به عنوان فرزند تقویم
-}
-
-filterIcon.addEventListener("click", displayFilter);
-/*DISPLAY FILTERBOX*/

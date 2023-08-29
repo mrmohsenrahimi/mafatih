@@ -22,7 +22,11 @@
 }
 
 .footer-z {
-    z-index: 1040;
+    z-index: 1050;
+}
+
+.z-in-footer-offcanvas {
+    z-index: 1045;
 }
 
 .bg-footer-reader {

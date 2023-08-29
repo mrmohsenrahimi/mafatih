@@ -23,6 +23,14 @@
     z-index: 1450;
 }
 
+.z-in-nav-offcanvas {
+    z-index: 1400;
+}
+
+.z-1000 {
+    z-index: 1000 !important;
+}
+
 .offcanvas.offcanvas-start {
     padding-top: 5rem;
 }
