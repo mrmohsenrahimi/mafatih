@@ -87,3 +87,32 @@
     border: 1px lightgray solid !important;
     box-shadow: 0 0 1rem lightgray;
 }
+
+.tab-footer-setting {
+    color: var(--Tlight-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px !important;
+    height: 38px;
+}
+
+.change-line-height {
+
+}
+
+.text-to-change-line-height {
+    height: 235px;
+    overflow-y: scroll;
+}
+
+.change-font-size {
+
+}
+
+.text-to-change-font-size {
+    width: 50%;
+    height: 20vh;
+    box-shadow: 0 0 0.7rem var(--Tlight-light-black);
+    border-radius: 0.8rem;
+}

@@ -309,13 +309,68 @@
         <!-- FOOTER -->
         
         <!-- OFFCANVAS FOOTER -->
-        <div class="offcanvas offcanvas-bottom pb-5 z-in-footer-offcanvas" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel" data-bs-backdrop="static">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body small">
-                ...
+        <div class="offcanvas offcanvas-bottom pb-5 z-in-footer-offcanvas h-75 bg-footer-reader p-3" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel" data-bs-backdrop="static">
+            <div class="offcanvas-body bg-white rounded-3">
+                <div class="nav nav-tabs d-flex justify-content-around" id="nav-tab" role="tablist">
+                    <button class="nav-link p-2 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                        <span class="tab-footer-setting">
+                            <i class="fa-regular fa-sun-bright fa-xl"></i>
+                        </span>
+                    </button>
+                    <button class="nav-link p-2" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                        <span class="tab-footer-setting">
+                            <i class="fa-solid fa-line-height fa-xl"></i>
+                        </span>
+                    </button>
+                    <button class="nav-link p-2" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                        <span class="tab-footer-setting">
+                            <i class="fa-regular fa-text-size fa-xl"></i>
+                        </span>
+                    </button>
+                    <button class="nav-link p-2" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">
+                        <span class="tab-footer-setting">
+                            <i class="fa-regular fa-font fa-xl"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <div class="themes d-flex flex-column justify-content-between align-items-center py-3">
+                            <img src="./static/assets/images/theme-light.png" alt="theme light">
+                            <img src="./static/assets/images/theme-sepia.png" alt="theme sepia">
+                            <img src="./static/assets/images/theme-light.png" alt="theme light">
+                            <img src="./static/assets/images/theme-sepia.png" alt="theme sepia">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <div class="change-line-height">
+                            <div class="d-flex flex-column align-items-center justify-content-between gap-3">
+                                <p class="text-to-change-line-height border p-1 px-2">
+                                    السَّلامُ عَلَیْکَ یَا أَبا عَبْدِاللّٰهِ، السَّلامُ عَلَیْکَ یَا ابْنَ رَسُولِ اللّٰهِ
+                                    السَّلامُ عَلَیْکَ یَا أَبا عَبْدِاللّٰهِ، السَّلامُ عَلَیْکَ یَا ابْنَ رَسُولِ اللّٰهِ
+                                </p>
+								<div class="buttons-for-change-line-height d-flex justify-content-center gap-3">
+									<button class="btn increase"><i class="fa-regular fa-plus"></i></button>
+									<input type="number"
+										   name="line height"
+										   id="lineHeight"
+										   value="1"
+										   class="form-control w-25 text-center"
+										   readonly>
+									<button class="btn decrease"><i class="fa-regular fa-minus"></i></button>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                        <div class="change-font-size">
+                            <div class="text-to-change-font-size d-flex align-items-center justify-content-center mx-auto">
+                                <span>اللّٰهِ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0"></div>
+                </div>
             </div>
         </div>
         <!-- OFFCANVAS FOOTER -->
