@@ -5,114 +5,131 @@
 
 
 .prayer-box {
-    height: 100vh;
+	height: 100vh;
 }
 
 .content .prayer {
-    font-family: KFG;
+	font-family: KFG;
 }
 
 .content .text {
-    font-family: "noto", sans-serif;
-    font-size: 1.4rem;
+	font-family: "noto", sans-serif;
+	font-size: 1.4rem;
 }
 
 .content .quran {
-    color: var(--Tlight-veryDarkGreen);
+	color: var(--Tlight-veryDarkGreen);
 }
 
 .footer-z {
-    z-index: 1050;
+	z-index: 1050;
 }
 
 .z-in-footer-offcanvas {
-    z-index: 1045;
+	z-index: 1045;
 }
 
 .bg-footer-reader {
-    background: var(--Tlight-lightGreen);
-    box-shadow: 0px 0px 24px 12px rgba(0, 0, 0, 0.24);
+	background: var(--Tlight-lightGreen);
+	box-shadow: 0px 0px 24px 12px rgba(0, 0, 0, 0.24);
 }
 
 .footer .themes > {
-    color: var(--Tlight-veryDarkGreen);
-    text-align: justify;
-    font-family: noto, sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
+	color: var(--Tlight-veryDarkGreen);
+	text-align: justify;
+	font-family: noto, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
 }
 
 .footer .themes .fa-sun-bright {
-    stroke-width: 1.1px;
-    stroke: var(--Tlight-veryDarkGreen);
+	stroke-width: 1.1px;
+	stroke: var(--Tlight-veryDarkGreen);
 }
 
 .footer .speed > {
-    color: var(--Tlight-veryDarkGreen);
-    text-align: justify;
-    font-family: noto, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
+	color: var(--Tlight-veryDarkGreen);
+	text-align: justify;
+	font-family: noto, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
 }
 
 .footer .singer button {
-    color: var(--Tlight-veryDarkGreen);
-    text-align: justify;
-    font-family: noto, sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    white-space: nowrap;
+	color: var(--Tlight-veryDarkGreen);
+	text-align: justify;
+	font-family: noto, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	white-space: nowrap;
 }
 
 /*PRAYER STYLES*/
 .prayer {
-    color: var(--Tlight-veryDarkGreen);
-    text-align: justify;
-    font-family: KFGQPC Uthman Taha Naskh;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
+	color: var(--Tlight-veryDarkGreen);
+	text-align: justify;
+	font-family: KFGQPC Uthman Taha Naskh;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
 }
 
 .width-element-footer {
-    width: 30px;
+	width: 30px;
 }
 
 
 .setting-select {
-    /*padding: 0.25rem;*/
-    border-radius: 0.25rem;
-    border: 1px lightgray solid !important;
-    box-shadow: 0 0 1rem lightgray;
+	/*padding: 0.25rem;*/
+	border-radius: 0.25rem;
+	border: 1px lightgray solid !important;
+	box-shadow: 0 0 1rem lightgray;
 }
 
 .tab-footer-setting {
-    color: var(--Tlight-black);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 38px !important;
-    height: 38px;
-}
-
-.change-line-height {
-
-}
-
-.text-to-change-line-height {
-    height: 235px;
-    overflow-y: scroll;
+	color: var(--Tlight-black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 38px !important;
+	height: 38px;
 }
 
 .change-font-size {
-
+	height: 40vh;
 }
 
 .text-to-change-font-size {
-    width: 50%;
-    height: 20vh;
-    box-shadow: 0 0 0.7rem var(--Tlight-light-black);
-    border-radius: 0.8rem;
+	width: 50%;
+	height: 20vh;
+	box-shadow: 0 0 10px var(--Tlight-light-black);
+	border-radius: 0.8rem;
+	font-size: 32px;
+}
+
+/*#nav-tabContent {*/
+/*	height: 55vh;*/
+/*}*/
+
+/*.tab-pane.show.active {*/
+/*	height: inherit;*/
+/*}*/
+
+.tab-pane > * {
+	height: 55vh;
+	overflow-y: auto;
+	padding-bottom: 20px;
+	margin: 0 0 2rem 0;
+}
+
+.font-family-box {
+	padding: 0.4rem;
+	border-radius: 8px;
+	box-shadow: 0 0 10px var(--Tlight-light-black);
+}
+
+.font-family-box-active {
+	border: 4px solid var(--Tlight-brown);
 }

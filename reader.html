@@ -1,387 +1,596 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Reader Page</title>
-        <link rel="stylesheet" href="./static/assets/css/bootstrap.css">
-        <link rel="stylesheet" href="./static/assets/css/bootstrap.rtl.css">
-        <link rel="stylesheet" href="./static/assets/css/all.css">
-        <link rel="stylesheet" href="./static/assets/css/reader-style.css">
-        <!--         <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-<!--         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-<!--         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap" rel="stylesheet"> -->
-    </head>
-    <body>
-        <!-- NAVBAR -->
-        <nav class="navbar bg-header position-sticky top-0 w-100 z-in-nav" dir="ltr">
-            <div class="container-fluid d-flex justify-content-between px-4">
-                <div class="links width-element-header">
-                    <div class="d-flex gap-4">
-                        <div class="dropdown">
-                            <button class="btn p-0 border-0" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-regular fa-globe fa-xl"></i>
-                            </button>
-                            <ul class="dropdown-menu-header dropdown-menu rounded-4 p-0 mt-5">
-                                <li><a class="dropdown-item px-2 rounded-4 dropdown-bg-color" href="#">Action one</a></li>
-                                <li><a class="dropdown-item px-2 rounded-4 dropdown-bg-color" href="#">Action two</a></li>
-                                <li><a class="dropdown-item px-2 rounded-4 dropdown-bg-color" href="#">Action two</a></li>
-                            </ul>
-                        </div>
-                        <div class="dropdown">
-                            <button class="btn p-0 border-0" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-regular fa-user-circle fa-xl"></i>
-                            </button>
-                            <ul class="dropdown-menu rounded-4 p-0 mt-5 dropdown-bg-color">
-                                <li><a class="dropdown-header text-decoration-none text-dark rounded-4 bg-light-green rounded-bottom-0" href="#">Action one</a></li>
-                                <li class="bg-light-green"><a class="dropdown-item rounded-4 rounded-bottom-0 dropdown-bg-color " href="#">Action one</a></li>
-                                <li><a class="dropdown-item" href="#">Action two</a></li>
-                                <li><a class="dropdown-item rounded-4 rounded-top-0" href="#">Action two</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="icon-link">
-                    <a class="navbar-brand" href="#">
-                        <img src="static/assets/images/logo-site.svg" alt="logo of site" width="60">
-                    </a>
-                </div>
-                <div class="navbar-toggle width-element-header d-flex justify-content-end">
-                    <button id="bars-close" class="btn p-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-                        <i class="fa-solid fa-bars fa-xl"></i>
-                    </button>
-                </div>
-            </div>
-        </nav>
-        
-        <!-- NAVBAR -->
-        
-        <!-- OFFCANVAS NAV -->
-        <div class="offcanvas offcanvas-start bg-light-green z-in-nav-offcanvas" dir="rtl" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-            <div class="offcanvas-body">
-                <div class="d-flex flex-column gap-3">
-                
-                    <!--SEARCH BOX-->
-                    <div class="form-box pb-2">
-                        <form action="" enctype="multipart/form-data">
-                            <div class="d-flex rounded-pill">
-                                <div class="d-flex rounded-pill w-100">
-                                    <button type="button" class="btn p-2 rounded-0 rounded-start-5 bg-searchbox"><i class="fa-regular fa-sliders"></i></button>
-                                    <input type="text" name="name" class="input-search form-control border-0 rounded-0 bg-searchbox" placeholder="البحث في المفاتیح الجنان">
-                                    <button type="button" class="icon-search btn p-2 rounded-0 rounded-end-5 bg-searchbox"><i class="fa-solid fa-magnifying-glass"></i></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                
-                    <!--SEARCH BOX-->
-                
-                    <!--TABS IN OFCANVAS-->
-                    <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
-                        <li class="nav-item w-50" role="presentation">
-                            <button class="nav-link w-100 bg-tabs text-color-tabs rounded-5 rounded-end-0 active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
-                        </li>
-                        <li class="nav-item w-50" role="presentation">
-                            <button class="nav-link w-100 bg-tabs text-color-tabs rounded-5 rounded-start-0" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
-                        </li>
-                    </ul>
-                    <!--TABS IN OFCANVAS-->
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                            <div class="accordion" id="accordionFlushExample-1">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed d-flex justify-content-end gap-1" dir="ltr" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                            <span class="text-dark">باب الأول</span>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseOne" class="accordion-collapse collapse">
-                                        <div class="accordion-body">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed d-flex justify-content-end gap-1" dir="ltr" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne-1" aria-expanded="false" aria-controls="flush-collapseOne">
-                                                        <span class="text-dark">اغمال لیلة حادی عشر من یوم شهر الرمضان الکریم (لیلة قدر)</span>
-                                                    </button>
-                                                </h2>
-                                                <div id="flush-collapseOne-1" class="accordion-collapse collapse">
-                                                    <div class="accordion-body">
-                                                        <div class="accordion-body">
-                                                            <a href="#" class="text-decoration-none text-dark">اعمال یوم تاسوعاء</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed d-flex justify-content-end gap-1" dir="ltr" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne-2" aria-expanded="false" aria-controls="flush-collapseOne">
-                                                        <span class="text-dark">اعمال یوم عاشوراء</span>
-                                                    </button>
-                                                </h2>
-                                                <div id="flush-collapseOne-2" class="accordion-collapse collapse">
-                                                    <div class="accordion-body">
-                                                        <div class="accordion-body">
-                                                            <a href="#" class="text-decoration-none text-dark">اعمال یوم عرفة</a>
-                                                        </div>
-                                                        <div class="accordion-body">
-                                                            <a href="#" class="text-decoration-none text-dark">اعمال یوم عرفة</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed d-flex justify-content-end gap-1" dir="ltr" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                            <span class="text-dark">یوم عرفة</span>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseTwo" class="accordion-collapse collapse">
-                                        <div class="accordion-body">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed d-flex justify-content-end gap-1" dir="ltr" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo-2" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                        <span class="text-dark">اعمال یوم عاشوراء</span>
-                                                    </button>
-                                                </h2>
-                                                <div id="flush-collapseTwo-2" class="accordion-collapse collapse">
-                                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed d-flex justify-content-end gap-1" dir="ltr" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                            <span class="text-dark">باب الثاني</span>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseThree" class="accordion-collapse collapse">
-                                        <div class="accordion-body">
-                                            <div class="accordion-body">
-                                                <a href="#" class="text-decoration-none text-dark">عااااا</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed d-flex justify-content-end gap-1" dir="ltr" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseThree">
-                                            <span class="text-dark">باب الثالث</span>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseSeven" class="accordion-collapse collapse">
-                                        <div class="accordion-body">
-                                            <div class="accordion-body">
-                                                Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade border-0" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                            <div class="accordion" id="accordionFlushExample-2">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed d-flex justify-content-end gap-1" dir="ltr" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseOne">
-                                            <span class="text-dark">Accordion Item #1</span>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseFour" class="accordion-collapse collapse">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed d-flex justify-content-end gap-1" dir="ltr" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                            <span class="text-dark">Accordion Item #2</span>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseFive" class="accordion-collapse collapse">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed d-flex justify-content-end gap-1" dir="ltr" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
-                                            <span class="text-dark">Accordion Item #3</span>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseSix" class="accordion-collapse collapse">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--ACCORDIONS FOR TABS-->
-                
-                    <!--ACCORDIONS FOR TABS-->
-                </div>
-                <!--OFFCANCAS PROFILE-->
-                <div class="Profile position-absolute bottom-0 end-0 w-100">
-                    <div class="position-relative w-100 px-3">
-                        <div class="d-flex bg-light-green w-100 border-top-1 align-items-center gap-3 text-profile-color justify-content-between py-2">
-                            <div class="d-flex align-items-center gap-3">
-                                <a href="#" class="text-profile-color"><i class="fa-regular fa-circle-user fa-2xl"></i></a>
-                                <span class="h3 m-0">محمد حسین علیزاده</span>
-                            </div>
-                            <div class="dropup">
-                                <button class="btn border-0 p-0" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-caret-down fa-rotate-90"></i>
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end dropdown-bg-color mb-3 rounded-4 p-0">
-                                    <li><a class="dropdown-item rounded-4 rounded-bottom-0" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Action two</a></li>
-                                    <li><a class="dropdown-item rounded-4 rounded-top-0" href="#">Action three</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--OFFCANCAS PROFILE-->
-            </div>
-        </div>
-        <!-- OFFCANVAS NAV -->
-        
-        <!-- PRAYER BOX -->
-        <div class="prayer-box pt-4">
-            <div class="container">
-                <div class="text-of-prayer pt-2 px-2 px-md-0 d-flex flex-column align-items-center gap-4">
-                    <div class="head-prayer">
-                        <img src="./static/assets/images/بسم%20الله%20(6)%201.svg" alt="in the name of god in head of text prayer">
-                    </div>
-                    <div class="content">
-                        <p class="prayer">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+			  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Reader Page</title>
+		<link rel="stylesheet" href="./static/assets/css/bootstrap.css">
+		<link rel="stylesheet" href="./static/assets/css/bootstrap.rtl.css">
+		<link rel="stylesheet" href="./static/assets/css/all.css">
+		<link rel="stylesheet" href="./static/assets/css/reader-style.css">
+		<!--         <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+		<!--         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+		<!--         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap" rel="stylesheet"> -->
+	</head>
+	<body>
+		<!-- NAVBAR -->
+		<nav class="navbar bg-header position-sticky top-0 w-100 z-in-nav" dir="ltr">
+			<div class="container-fluid d-flex justify-content-between px-4">
+				<div class="links width-element-header">
+					<div class="d-flex gap-4">
+						<div class="dropdown">
+							<button class="btn p-0 border-0" data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="fa-regular fa-globe fa-xl"></i>
+							</button>
+							<ul class="dropdown-menu-header dropdown-menu rounded-4 p-0 mt-5">
+								<li><a class="dropdown-item px-2 rounded-4 dropdown-bg-color" href="#">Action one</a>
+								</li>
+								<li><a class="dropdown-item px-2 rounded-4 dropdown-bg-color" href="#">Action two</a>
+								</li>
+								<li><a class="dropdown-item px-2 rounded-4 dropdown-bg-color" href="#">Action two</a>
+								</li>
+							</ul>
+						</div>
+						<div class="dropdown">
+							<button class="btn p-0 border-0" data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="fa-regular fa-user-circle fa-xl"></i>
+							</button>
+							<ul class="dropdown-menu rounded-4 p-0 mt-5 dropdown-bg-color">
+								<li>
+									<a class="dropdown-header text-decoration-none text-dark rounded-4 bg-light-green rounded-bottom-0"
+									   href="#">Action one</a></li>
+								<li class="bg-light-green">
+									<a class="dropdown-item rounded-4 rounded-bottom-0 dropdown-bg-color " href="#">Action
+																													one</a>
+								</li>
+								<li><a class="dropdown-item" href="#">Action two</a></li>
+								<li><a class="dropdown-item rounded-4 rounded-top-0" href="#">Action two</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="icon-link">
+					<a class="navbar-brand" href="#">
+						<img src="static/assets/images/logo-site.svg" alt="logo of site" width="60">
+					</a>
+				</div>
+				<div class="navbar-toggle width-element-header d-flex justify-content-end">
+					<button id="bars-close"
+							class="btn p-0 border-0"
+							type="button"
+							data-bs-toggle="offcanvas"
+							data-bs-target="#staticBackdrop"
+							aria-controls="staticBackdrop">
+						<i class="fa-solid fa-bars fa-xl"></i>
+					</button>
+				</div>
+			</div>
+		</nav>
+		
+		<!-- NAVBAR -->
+		
+		<!-- OFFCANVAS NAV -->
+		<div class="offcanvas offcanvas-start bg-light-green z-in-nav-offcanvas"
+			 dir="rtl"
+			 data-bs-backdrop="static"
+			 tabindex="-1"
+			 id="staticBackdrop"
+			 aria-labelledby="staticBackdropLabel">
+			<div class="offcanvas-body">
+				<div class="d-flex flex-column gap-3">
+					
+					<!--SEARCH BOX-->
+					<div class="form-box pb-2">
+						<form action="" enctype="multipart/form-data">
+							<div class="d-flex rounded-pill">
+								<div class="d-flex rounded-pill w-100">
+									<button type="button" class="btn p-2 rounded-0 rounded-start-5 bg-searchbox"><i
+											class="fa-regular fa-sliders"></i></button>
+									<input type="text"
+										   name="name"
+										   class="input-search form-control border-0 rounded-0 bg-searchbox"
+										   placeholder="البحث في المفاتیح الجنان">
+									<button type="button"
+											class="icon-search btn p-2 rounded-0 rounded-end-5 bg-searchbox">
+										<i class="fa-solid fa-magnifying-glass"></i></button>
+								</div>
+							</div>
+						</form>
+					</div>
+					
+					<!--SEARCH BOX-->
+					
+					<!--TABS IN OFCANVAS-->
+					<ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+						<li class="nav-item w-50" role="presentation">
+							<button class="nav-link w-100 bg-tabs text-color-tabs rounded-5 rounded-end-0 active"
+									id="pills-home-tab"
+									data-bs-toggle="pill"
+									data-bs-target="#pills-home"
+									type="button"
+									role="tab"
+									aria-controls="pills-home"
+									aria-selected="true">Home
+							</button>
+						</li>
+						<li class="nav-item w-50" role="presentation">
+							<button class="nav-link w-100 bg-tabs text-color-tabs rounded-5 rounded-start-0"
+									id="pills-profile-tab"
+									data-bs-toggle="pill"
+									data-bs-target="#pills-profile"
+									type="button"
+									role="tab"
+									aria-controls="pills-profile"
+									aria-selected="false">Profile
+							</button>
+						</li>
+					</ul>
+					<!--TABS IN OFCANVAS-->
+					<div class="tab-content" id="pills-tabContent">
+						<div class="tab-pane fade show active"
+							 id="pills-home"
+							 role="tabpanel"
+							 aria-labelledby="pills-home-tab"
+							 tabindex="0">
+							<div class="accordion" id="accordionFlushExample-1">
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed d-flex justify-content-end gap-1"
+												dir="ltr"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#flush-collapseOne"
+												aria-expanded="false"
+												aria-controls="flush-collapseOne">
+											<span class="text-dark">باب الأول</span>
+										</button>
+									</h2>
+									<div id="flush-collapseOne" class="accordion-collapse collapse">
+										<div class="accordion-body">
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed d-flex justify-content-end gap-1"
+															dir="ltr"
+															type="button"
+															data-bs-toggle="collapse"
+															data-bs-target="#flush-collapseOne-1"
+															aria-expanded="false"
+															aria-controls="flush-collapseOne">
+														<span class="text-dark">اغمال لیلة حادی عشر من یوم شهر الرمضان الکریم (لیلة قدر)</span>
+													</button>
+												</h2>
+												<div id="flush-collapseOne-1" class="accordion-collapse collapse">
+													<div class="accordion-body">
+														<div class="accordion-body">
+															<a href="#" class="text-decoration-none text-dark">اعمال یوم
+																											   تاسوعاء</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed d-flex justify-content-end gap-1"
+															dir="ltr"
+															type="button"
+															data-bs-toggle="collapse"
+															data-bs-target="#flush-collapseOne-2"
+															aria-expanded="false"
+															aria-controls="flush-collapseOne">
+														<span class="text-dark">اعمال یوم عاشوراء</span>
+													</button>
+												</h2>
+												<div id="flush-collapseOne-2" class="accordion-collapse collapse">
+													<div class="accordion-body">
+														<div class="accordion-body">
+															<a href="#" class="text-decoration-none text-dark">اعمال یوم
+																											   عرفة</a>
+														</div>
+														<div class="accordion-body">
+															<a href="#" class="text-decoration-none text-dark">اعمال یوم
+																											   عرفة</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed d-flex justify-content-end gap-1"
+												dir="ltr"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#flush-collapseTwo"
+												aria-expanded="false"
+												aria-controls="flush-collapseTwo">
+											<span class="text-dark">یوم عرفة</span>
+										</button>
+									</h2>
+									<div id="flush-collapseTwo" class="accordion-collapse collapse">
+										<div class="accordion-body">
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed d-flex justify-content-end gap-1"
+															dir="ltr"
+															type="button"
+															data-bs-toggle="collapse"
+															data-bs-target="#flush-collapseTwo-2"
+															aria-expanded="false"
+															aria-controls="flush-collapseTwo">
+														<span class="text-dark">اعمال یوم عاشوراء</span>
+													</button>
+												</h2>
+												<div id="flush-collapseTwo-2" class="accordion-collapse collapse">
+													<div class="accordion-body">Placeholder content for this accordion,
+																				which is intended to demonstrate the
+														<code>.accordion-flush</code> class. This is the second item's
+																				accordion body. Let's imagine this being
+																				filled with some actual content.
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed d-flex justify-content-end gap-1"
+												dir="ltr"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#flush-collapseThree"
+												aria-expanded="false"
+												aria-controls="flush-collapseThree">
+											<span class="text-dark">باب الثاني</span>
+										</button>
+									</h2>
+									<div id="flush-collapseThree" class="accordion-collapse collapse">
+										<div class="accordion-body">
+											<div class="accordion-body">
+												<a href="#" class="text-decoration-none text-dark">عااااا</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed d-flex justify-content-end gap-1"
+												dir="ltr"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#flush-collapseSeven"
+												aria-expanded="false"
+												aria-controls="flush-collapseThree">
+											<span class="text-dark">باب الثالث</span>
+										</button>
+									</h2>
+									<div id="flush-collapseSeven" class="accordion-collapse collapse">
+										<div class="accordion-body">
+											<div class="accordion-body">
+												Placeholder content for this accordion, which is intended to demonstrate
+												the <code>.accordion-flush</code> class. This is the third item's
+												accordion body. Nothing more exciting happening here in terms of
+												content, but just filling up the space to make it look, at least at
+												first glance, a bit more representative of how this would look in a
+												real-world application.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade border-0"
+							 id="pills-profile"
+							 role="tabpanel"
+							 aria-labelledby="pills-profile-tab"
+							 tabindex="0">
+							<div class="accordion" id="accordionFlushExample-2">
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed d-flex justify-content-end gap-1"
+												dir="ltr"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#flush-collapseFour"
+												aria-expanded="false"
+												aria-controls="flush-collapseOne">
+											<span class="text-dark">Accordion Item #1</span>
+										</button>
+									</h2>
+									<div id="flush-collapseFour" class="accordion-collapse collapse">
+										<div class="accordion-body">Placeholder content for this accordion, which is
+																	intended to demonstrate the
+											<code>.accordion-flush</code> class. This is the first item's accordion
+																	body.
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed d-flex justify-content-end gap-1"
+												dir="ltr"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#flush-collapseFive"
+												aria-expanded="false"
+												aria-controls="flush-collapseTwo">
+											<span class="text-dark">Accordion Item #2</span>
+										</button>
+									</h2>
+									<div id="flush-collapseFive" class="accordion-collapse collapse">
+										<div class="accordion-body">Placeholder content for this accordion, which is
+																	intended to demonstrate the
+											<code>.accordion-flush</code> class. This is the second item's accordion
+																	body. Let's imagine this being filled with some
+																	actual content.
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed d-flex justify-content-end gap-1"
+												dir="ltr"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#flush-collapseSix"
+												aria-expanded="false"
+												aria-controls="flush-collapseThree">
+											<span class="text-dark">Accordion Item #3</span>
+										</button>
+									</h2>
+									<div id="flush-collapseSix" class="accordion-collapse collapse">
+										<div class="accordion-body">Placeholder content for this accordion, which is
+																	intended to demonstrate the
+											<code>.accordion-flush</code> class. This is the third item's accordion
+																	body. Nothing more exciting happening here in terms
+																	of content, but just filling up the space to make it
+																	look, at least at first glance, a bit more
+																	representative of how this would look in a
+																	real-world application.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--ACCORDIONS FOR TABS-->
+					
+					<!--ACCORDIONS FOR TABS-->
+				</div>
+				<!--OFFCANCAS PROFILE-->
+				<div class="Profile position-absolute bottom-0 end-0 w-100">
+					<div class="position-relative w-100 px-3">
+						<div class="d-flex bg-light-green w-100 border-top-1 align-items-center gap-3 text-profile-color justify-content-between py-2">
+							<div class="d-flex align-items-center gap-3">
+								<a href="#" class="text-profile-color"><i class="fa-regular fa-circle-user fa-2xl"></i></a>
+								<span class="h3 m-0">محمد حسین علیزاده</span>
+							</div>
+							<div class="dropup">
+								<button class="btn border-0 p-0" data-bs-toggle="dropdown" aria-expanded="false">
+									<i class="fa-solid fa-caret-down fa-rotate-90"></i>
+								</button>
+								<ul class="dropdown-menu dropdown-menu-end dropdown-bg-color mb-3 rounded-4 p-0">
+									<li><a class="dropdown-item rounded-4 rounded-bottom-0" href="#">Action</a></li>
+									<li><a class="dropdown-item" href="#">Action two</a></li>
+									<li><a class="dropdown-item rounded-4 rounded-top-0" href="#">Action three</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--OFFCANCAS PROFILE-->
+			</div>
+		</div>
+		<!-- OFFCANVAS NAV -->
+		
+		<!-- PRAYER BOX -->
+		<div class="prayer-box pt-4">
+			<div class="container">
+				<div class="text-of-prayer pt-2 px-2 px-md-0 d-flex flex-column align-items-center gap-4">
+					<div class="head-prayer">
+						<img src="./static/assets/images/بسم%20الله%20(6)%201.svg"
+							 alt="in the name of god in head of text prayer">
+					</div>
+					<div class="content">
+						<p class="prayer pb-5 mb-5">
                             <span class="text">
                                 متن توضیحی
                                 متن توضیحی
                                 متن توضیحی
                                 متن توضیحی
                             </span>
-                                السَّلامُ عَلَیْکَ یَا أَبا عَبْدِاللّٰهِ، السَّلامُ عَلَیْکَ یَا ابْنَ رَسُولِ اللّٰهِ، السَّلامُ عَلَیْکَ یا خِیَرَهَ اللّٰهِ وَابْنَ خِیرَتِه
-                            <span class="quran">
+							السَّلامُ عَلَیْکَ یَا أَبا عَبْدِاللّٰهِ، السَّلامُ عَلَیْکَ یَا ابْنَ رَسُولِ اللّٰهِ،
+							السَّلامُ عَلَیْکَ یا خِیَرَهَ اللّٰهِ وَابْنَ خِیرَتِه
+							<span class="quran">
                                 متن قرآن
                                 متن قرآن
                                 متن قرآن
                                 متن قرآن
                                 متن قرآن
                             </span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- PRAYER BOX -->
-        
-        <!-- FOOTER -->
-        <div class="footer bg-footer-reader position-sticky bottom-0 bg-footer-reader footer-z">
-            <div class="container">
-                <div class="d-flex py-3 justify-content-between align-items-center">
-                    <div class="themes width-element-footer">
-                        <button class="btn setting-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-                            <i class="fa-regular fa-gear fa-xl"></i>
-                        </button>
-                    </div>
-                    <div class="speed width-element-footer">
-                        <button class="btn border-0 p-0">1.00x</button>
-                    </div>
-                    <div class="play">
-                        <button type="button" class="btn border-0 p-0">
-                            <img src="./static/assets/images/play-icon.svg" alt="play icon">
-                        </button>
-                    </div>
-                    <div class="singer width-element-footer">
-                        <button class="btn border-0 p-0">
-                            باسم الکربلائي
-                        </button>
-                    </div>
-                    <div class="select-box width-element-footer d-flex justify-content-end">
-                        <button type="button" class="btn border-0 p-0"><i class="fa-solid fa-ellipsis-vertical"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- FOOTER -->
-        
-        <!-- OFFCANVAS FOOTER -->
-        <div class="offcanvas offcanvas-bottom pb-5 z-in-footer-offcanvas h-75 bg-footer-reader p-3" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel" data-bs-backdrop="static">
-            <div class="offcanvas-body bg-white rounded-3">
-                <div class="nav nav-tabs d-flex justify-content-around" id="nav-tab" role="tablist">
-                    <button class="nav-link p-2 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- PRAYER BOX -->
+		
+		<!-- FOOTER -->
+		<div class="footer bg-footer-reader position-fixed d-flex w-100 bottom-0 bg-footer-reader footer-z">
+			<div class="container">
+				<div class="d-flex py-3 justify-content-between align-items-center">
+					<div class="themes width-element-footer">
+						<button class="btn setting-btn"
+								type="button"
+								data-bs-toggle="offcanvas"
+								data-bs-target="#offcanvasBottom"
+								aria-controls="offcanvasBottom">
+							<i class="fa-regular fa-gear fa-xl"></i>
+						</button>
+					</div>
+					<div class="speed width-element-footer">
+						<button class="btn border-0 p-0">1.00x</button>
+					</div>
+					<div class="play">
+						<button type="button" class="btn border-0 p-0">
+							<img src="./static/assets/images/play-icon.svg" alt="play icon">
+						</button>
+					</div>
+					<div class="singer width-element-footer">
+						<button class="btn border-0 p-0">
+							باسم الکربلائي
+						</button>
+					</div>
+					<div class="select-box width-element-footer d-flex justify-content-end">
+						<button type="button" class="btn border-0 p-0"><i class="fa-solid fa-ellipsis-vertical"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- FOOTER -->
+		
+		<!-- OFFCANVAS FOOTER -->
+		<div class="offcanvas offcanvas-bottom pb-5 z-in-footer-offcanvas h-75 bg-footer-reader p-3 mb-3"
+			 tabindex="-1"
+			 id="offcanvasBottom"
+			 aria-labelledby="offcanvasBottomLabel"
+			 data-bs-backdrop="static">
+			<div class="offcanvas-body bg-white rounded-3 d-flex flex-column overflow-hidden">
+				<div class="nav nav-tabs d-flex justify-content-around" id="nav-tab" role="tablist">
+					<button class="nav-link p-2 active"
+							id="nav-home-tab"
+							data-bs-toggle="tab"
+							data-bs-target="#nav-home"
+							type="button"
+							role="tab"
+							aria-controls="nav-home"
+							aria-selected="true">
                         <span class="tab-footer-setting">
-                            <i class="fa-regular fa-sun-bright fa-xl"></i>
+                            <i class="fa-regular fa-sun-bright fa-lg"></i>
                         </span>
-                    </button>
-                    <button class="nav-link p-2" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+					</button>
+					<button class="nav-link p-2"
+							id="nav-contact-tab"
+							data-bs-toggle="tab"
+							data-bs-target="#nav-contact"
+							type="button"
+							role="tab"
+							aria-controls="nav-contact"
+							aria-selected="false">
                         <span class="tab-footer-setting">
-                            <i class="fa-solid fa-line-height fa-xl"></i>
+                            <i class="fa-regular fa-text-size fa-lg"></i>
                         </span>
-                    </button>
-                    <button class="nav-link p-2" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+					</button>
+					<button class="nav-link p-2"
+							id="nav-disabled-tab"
+							data-bs-toggle="tab"
+							data-bs-target="#nav-disabled"
+							type="button"
+							role="tab"
+							aria-controls="nav-disabled"
+							aria-selected="false">
                         <span class="tab-footer-setting">
-                            <i class="fa-regular fa-text-size fa-xl"></i>
+                            <i class="fa-regular fa-font fa-lg"></i>
                         </span>
-                    </button>
-                    <button class="nav-link p-2" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">
-                        <span class="tab-footer-setting">
-                            <i class="fa-regular fa-font fa-xl"></i>
-                        </span>
-                    </button>
-                </div>
-                <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-                        <div class="themes d-flex flex-column justify-content-between align-items-center py-3">
-                            <img src="./static/assets/images/theme-light.png" alt="theme light">
-                            <img src="./static/assets/images/theme-sepia.png" alt="theme sepia">
-                            <img src="./static/assets/images/theme-light.png" alt="theme light">
-                            <img src="./static/assets/images/theme-sepia.png" alt="theme sepia">
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-                        <div class="change-line-height">
-                            <div class="d-flex flex-column align-items-center justify-content-between gap-3">
-                                <p class="text-to-change-line-height border p-1 px-2">
-                                    السَّلامُ عَلَیْکَ یَا أَبا عَبْدِاللّٰهِ، السَّلامُ عَلَیْکَ یَا ابْنَ رَسُولِ اللّٰهِ
-                                    السَّلامُ عَلَیْکَ یَا أَبا عَبْدِاللّٰهِ، السَّلامُ عَلَیْکَ یَا ابْنَ رَسُولِ اللّٰهِ
-                                </p>
-								<div class="buttons-for-change-line-height d-flex justify-content-center gap-3">
-									<button class="btn increase"><i class="fa-regular fa-plus"></i></button>
-									<input type="number"
-										   name="line height"
-										   id="lineHeight"
-										   value="1"
-										   class="form-control w-25 text-center"
-										   readonly>
-									<button class="btn decrease"><i class="fa-regular fa-minus"></i></button>
+					</button>
+				</div>
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade show active p-3"
+						 id="nav-home"
+						 role="tabpanel"
+						 aria-labelledby="nav-home-tab"
+						 tabindex="0">
+						<div class="themes d-flex flex-column justify-content-between align-items-center">
+							<img src="./static/assets/images/theme-light.png" alt="theme light">
+							<img src="./static/assets/images/theme-sepia.png" alt="theme sepia">
+							<img src="./static/assets/images/theme-light.png" alt="theme light">
+							<img src="./static/assets/images/theme-sepia.png" alt="theme sepia">
+						</div>
+					</div>
+					<div class="tab-pane fade"
+						 id="nav-contact"
+						 role="tabpanel"
+						 aria-labelledby="nav-contact-tab"
+						 tabindex="0">
+						<div class="change-font-size d-flex flex-column justify-content-center align-items-center gap-4">
+							<span class="text-to-change-font-size d-flex align-items-center justify-content-center">
+								اللّٰهِ
+							</span>
+							<div class="buttons-for-change-font-size d-flex justify-content-center gap-3">
+								<button class="btn border decrease">
+									<span>
+										<i class="fa-regular fa-minus fa-xs"></i>
+										<i class="fa-regular fa-a"></i>
+									</span>
+								</button>
+								<input type="number" name="font-size" id="fontSize" class="form-control w-25 text-center" readonly>
+								<button class="btn border increase">
+									<span>
+										<i class="fa-regular fa-plus fa-xs"></i>
+										<i class="fa-regular fa-a"></i>
+									</span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade"
+						 id="nav-disabled"
+						 role="tabpanel"
+						 aria-labelledby="nav-disabled-tab"
+						 tabindex="0">
+						<div class="change-font-family d-flex flex-column gap-4 px-3 pt-3" dir="ltr">
+							<div class="change-font-family-quran">
+								<h3>Quran Font style :</h3>
+								<div class="font-family-box-select d-flex flex-column gap-3">
+									<div class="font-family-box font-family-box-active d-flex rounded-3 justify-content-around align-items-center" id="font-family-translate-1" dir="rtl">
+										<span>نستعلیق :</span>
+										<img src="./static/assets/images/font-family-1.png" alt="font-family-1">
+									</div>
+									<div class="font-family-box d-flex rounded-3 justify-content-around align-items-center" id="font-family-translate-2" dir="rtl">
+										<span>نستعلیق :</span>
+										<img src="./static/assets/images/font-family-1.png" alt="font-family-1">
+									</div>
+									<div class="font-family-box d-flex rounded-3 justify-content-around align-items-center" id="font-family-translate-3" dir="rtl">
+										<span>نستعلیق :</span>
+										<img src="./static/assets/images/font-family-1.png" alt="font-family-1">
+									</div>
 								</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-                        <div class="change-font-size">
-                            <div class="text-to-change-font-size d-flex align-items-center justify-content-center mx-auto">
-                                <span>اللّٰهِ</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0"></div>
-                </div>
-            </div>
-        </div>
-        <!-- OFFCANVAS FOOTER -->
-        
-        
-        
-        <script src="./static/assets/js/bootstrap.bundle.js"></script>
-        <script src="./static/assets/js/all.js"></script>
-        <!-- MY JAVASCRIPT -->
-        <script src="./static/assets/js/reader.js"></script>
-        <script src="static/assets/js/header.js"></script>
-        <!-- MY JAVASCRIPT -->
-    </body>
+							</div>
+							<div class="change-font-family-translate">
+								<h3>translation Font style :</h3>
+								<div class="font-family-box-select d-flex flex-column gap-3">
+									<div class="font-family-box font-family-box-active d-flex rounded-3 justify-content-around align-items-center" id="font-family-1" dir="rtl">
+										<span>نستعلیق :</span>
+										<img src="./static/assets/images/font-family-1.png" alt="font-family-1">
+									</div>
+									<div class="font-family-box d-flex rounded-3 justify-content-around align-items-center" id="font-family-2" dir="rtl">
+										<span>نستعلیق :</span>
+										<img src="./static/assets/images/font-family-1.png" alt="font-family-1">
+									</div>
+									<div class="font-family-box d-flex rounded-3 justify-content-around align-items-center" id="font-family-3" dir="rtl">
+										<span>نستعلیق :</span>
+										<img src="./static/assets/images/font-family-1.png" alt="font-family-1">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- OFFCANVAS FOOTER -->
+		
+		
+		<script src="./static/assets/js/bootstrap.bundle.js"></script>
+		<script src="./static/assets/js/all.js"></script>
+		<!-- MY JAVASCRIPT -->
+		<script src="./static/assets/js/reader.js"></script>
+		<script src="static/assets/js/header.js"></script>
+		<!-- MY JAVASCRIPT -->
+	</body>
 </html>

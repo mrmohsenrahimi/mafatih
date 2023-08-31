@@ -1,43 +1,35 @@
 /*SETTING BUTTON*/
 const settingBtn = document.querySelector(".setting-btn");
-const header = document.querySelector(".navbar")
+const header = document.querySelector(".navbar");
 
 settingBtn.addEventListener("click", function () {
-    settingBtn.classList.toggle("setting-select");
-    header.classList.toggle("z-1000");
+	settingBtn.classList.toggle("setting-select");
+	header.classList.toggle("z-1000");
 });
 /*SETTING BUTTON*/
 
 
-/*LINE HEIGHT BUTTONS*/
+/*FONT SIZE BUTTONS*/
 const decreaseBtn = document.querySelector(".decrease");
 const increaseBtn = document.querySelector(".increase");
-let lineHeight = document.getElementById("lineHeight");
-let value = 1;
-const changeLineHeight = document.querySelector(".text-to-change-line-height");
-
-function changeLH() {
-    if (value <= 1) {
-        value = 1;
-    }
-    lineHeight.value = value;
-    changeLineHeight.style.lineHeight = lineHeight.value;
-    lineHeight.scrollIntoView({
-            behavior: "smooth",
-            block: "end",
-        }
-    )
-}
+let defaultFontSize = parseFloat(window.getComputedStyle(document.querySelector(".text-to-change-font-size")).fontSize);
+const boxFontSize = document.querySelector(".text-to-change-font-size");
+console.log(defaultFontSize);
 
 decreaseBtn.addEventListener("click", function () {
-    value--;
-    changeLH();
+	defaultFontSize--;
+	if (defaultFontSize <= 16) {
+		defaultFontSize = 16;
+	}
+	boxFontSize.style.fontSize = defaultFontSize;
 });
 increaseBtn.addEventListener("click", function () {
-    value++;
-    changeLH();
+	defaultFontSize++;
+	if (defaultFontSize > 48) {
+		defaultFontSize = 48;
+	}
+	boxFontSize.style.fontSize = defaultFontSize;
 });
 
-lineHeight.addEventListener("change", changeLH);
-
-/*LINE HEIGHT BUTTONS*/
+document.getElementById("fontSize").value = defaultFontSize;
+/*FONT SIZE BUTTONS*/
