@@ -2,11 +2,6 @@
 @import "style.css";
 @import "kfg-font.css";
 
-
-.prayer-box {
-	height: 100vh;
-}
-
 .content .prayer {
 	font-family: KFG;
 }
@@ -51,7 +46,7 @@
 	color: var(--Tlight-veryDarkGreen);
 	text-align: justify;
 	font-family: noto, sans-serif;
-	font-size: 14px;
+	font-size: 14px !important;
 	font-style: normal;
 	font-weight: 700;
 }
@@ -60,9 +55,10 @@
 	color: var(--Tlight-veryDarkGreen);
 	text-align: justify;
 	font-family: noto, sans-serif;
-	font-size: 12px;
+	font-size: 12px !important;
 	font-style: normal;
 	white-space: nowrap;
+	height: 26px;
 }
 
 /*PRAYER STYLES*/
@@ -80,8 +76,7 @@
 }
 
 
-.setting-select {
-	/*padding: 0.25rem;*/
+.footer-buttons-select {
 	border-radius: 0.25rem;
 	border: 1px lightgray solid !important;
 	box-shadow: 0 0 1rem lightgray;
@@ -131,4 +126,31 @@
 
 .font-family-box-active {
 	border: 4px solid var(--Tlight-brown);
+}
+
+.speed-box {
+	box-shadow: 0 0 10px var(--Tlight-light-black);
+	border-radius: 15px;
+	width: 100%;
+}
+
+.form-range::-webkit-slider-thumb {
+	background: var(--Tlight-brown);
+}
+
+.form-range::-moz-range-thumb {
+	background: var(--Tlight-brown);
+}
+
+.form-range::-ms-thumb {
+	background: var(--Tlight-brown);
+}
+
+.singer-box {
+	box-shadow: 0 0 10px var(--Tlight-light-black);
+	border-radius: 15px;
+}
+
+.singer-box-active {
+	outline: 4px solid var(--Tlight-brown);
 }

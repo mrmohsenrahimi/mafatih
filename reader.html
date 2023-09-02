@@ -37,10 +37,15 @@
 							<ul class="dropdown-menu rounded-4 p-0 mt-5 dropdown-bg-color">
 								<li>
 									<a class="dropdown-header text-decoration-none text-dark rounded-4 bg-light-green rounded-bottom-0"
-									   href="#">Action one</a></li>
+									   href="#">
+										Action one
+									</a>
+								</li>
 								<li class="bg-light-green">
-									<a class="dropdown-item rounded-4 rounded-bottom-0 dropdown-bg-color " href="#">Action
-																													one</a>
+									<a class="dropdown-item rounded-4 rounded-bottom-0 dropdown-bg-color " href="#">
+										Action
+										one
+									</a>
 								</li>
 								<li><a class="dropdown-item" href="#">Action two</a></li>
 								<li><a class="dropdown-item rounded-4 rounded-top-0" href="#">Action two</a></li>
@@ -83,14 +88,14 @@
 						<form action="" enctype="multipart/form-data">
 							<div class="d-flex rounded-pill">
 								<div class="d-flex rounded-pill w-100">
-									<button type="button" class="btn p-2 rounded-0 rounded-start-5 bg-searchbox"><i
+									<button type="button" class="btn p-2 rounded-0 rounded-start-4 bg-searchbox"><i
 											class="fa-regular fa-sliders"></i></button>
 									<input type="text"
 										   name="name"
 										   class="input-search form-control border-0 rounded-0 bg-searchbox"
 										   placeholder="البحث في المفاتیح الجنان">
 									<button type="button"
-											class="icon-search btn p-2 rounded-0 rounded-end-5 bg-searchbox">
+											class="icon-search btn p-2 rounded-0 rounded-end-4 bg-searchbox">
 										<i class="fa-solid fa-magnifying-glass"></i></button>
 								</div>
 							</div>
@@ -387,30 +392,33 @@
 		<!-- PRAYER BOX -->
 		<div class="prayer-box pt-4">
 			<div class="container">
-				<div class="text-of-prayer pt-2 px-2 px-md-0 d-flex flex-column align-items-center gap-4">
+				<div class="text-of-prayer pt-2 px-2 px-md-0 pb-3 mb-5 d-flex flex-column align-items-center gap-4">
 					<div class="head-prayer">
 						<img src="./static/assets/images/بسم%20الله%20(6)%201.svg"
 							 alt="in the name of god in head of text prayer">
 					</div>
-					<div class="content">
-						<p class="prayer pb-5 mb-5">
-                            <span class="text">
-                                متن توضیحی
-                                متن توضیحی
-                                متن توضیحی
-                                متن توضیحی
-                            </span>
-							السَّلامُ عَلَیْکَ یَا أَبا عَبْدِاللّٰهِ، السَّلامُ عَلَیْکَ یَا ابْنَ رَسُولِ اللّٰهِ،
-							السَّلامُ عَلَیْکَ یا خِیَرَهَ اللّٰهِ وَابْنَ خِیرَتِه
-							<span class="quran">
-                                متن قرآن
-                                متن قرآن
-                                متن قرآن
-                                متن قرآن
-                                متن قرآن
-                            </span>
-						</p>
-					</div>
+					<p class="prayer">
+						<span class="text">
+							متن توضیحی
+							متن توضیحی
+							متن توضیحی
+							متن توضیحی
+						</span>
+						السَّلامُ عَلَیْکَ یَا أَبا عَبْدِاللّٰهِ، السَّلامُ عَلَیْکَ یَا ابْنَ رَسُولِ اللّٰهِ،
+						السَّلامُ عَلَیْکَ یا خِیَرَهَ اللّٰهِ وَابْنَ خِیرَتِه
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, assumenda dolore earum est
+						itaque laborum magnam maxime mollitia nostrum odit officiis quaerat repudiandae sapiente sint
+						soluta vitae voluptatem? Accusamus, aspernatur at culpa debitis delectus dicta eius eligendi
+						facere fugiat, ipsum iure libero qui quia repudiandae sequi similique vel veritatis
+						voluptatibus.
+						<span class="quran">
+							متن قرآن
+							متن قرآن
+							متن قرآن
+							متن قرآن
+							متن قرآن
+						</span>
+					</p>
 				</div>
 			</div>
 		</div>
@@ -424,13 +432,19 @@
 						<button class="btn setting-btn"
 								type="button"
 								data-bs-toggle="offcanvas"
-								data-bs-target="#offcanvasBottom"
-								aria-controls="offcanvasBottom">
+								data-bs-target="#offcanvasBottom-setting"
+								aria-controls="offcanvasBottom-setting">
 							<i class="fa-regular fa-gear fa-xl"></i>
 						</button>
 					</div>
 					<div class="speed width-element-footer">
-						<button class="btn border-0 p-0">1.00x</button>
+						<button class="btn p-0 py-1 speed-btn"
+								type="button"
+								data-bs-toggle="offcanvas"
+								data-bs-target="#offcanvasBottom-speed"
+								aria-controls="offcanvasBottom-speed">
+							1.00x
+						</button>
 					</div>
 					<div class="play">
 						<button type="button" class="btn border-0 p-0">
@@ -438,7 +452,11 @@
 						</button>
 					</div>
 					<div class="singer width-element-footer">
-						<button class="btn border-0 p-0">
+						<button class="btn p-0 py-1 singer-btn"
+								type="button"
+								data-bs-toggle="offcanvas"
+								data-bs-target="#offcanvasBottom-singer"
+								aria-controls="offcanvasBottom-singer">
 							باسم الکربلائي
 						</button>
 					</div>
@@ -451,10 +469,10 @@
 		</div>
 		<!-- FOOTER -->
 		
-		<!-- OFFCANVAS FOOTER -->
-		<div class="offcanvas offcanvas-bottom pb-5 z-in-footer-offcanvas h-75 bg-footer-reader p-3 mb-3"
+		<!-- OFFCANVAS SETTING FOOTER -->
+		<div class="offcanvas offcanvas-bottom offcanvas-setting pb-5 z-in-footer-offcanvas h-75 bg-footer-reader p-3 mb-3"
 			 tabindex="-1"
-			 id="offcanvasBottom"
+			 id="offcanvasBottom-setting"
 			 aria-labelledby="offcanvasBottomLabel"
 			 data-bs-backdrop="static">
 			<div class="offcanvas-body bg-white rounded-3 d-flex flex-column overflow-hidden">
@@ -596,7 +614,76 @@
 				</div>
 			</div>
 		</div>
-		<!-- OFFCANVAS FOOTER -->
+		<!-- OFFCANVAS SETTING FOOTER -->
+		
+		<!-- OFFCANVAS SPEED FOOTER -->
+		<div class="offcanvas offcanvas-bottom offcanvas-speed pb-5 z-in-footer-offcanvas h-50 bg-footer-reader p-4 mb-3"
+			 tabindex="-1"
+			 id="offcanvasBottom-speed"
+			 aria-labelledby="offcanvasBottomLabel"
+			 data-bs-backdrop="static">
+			<div class="offcanvas-body bg-white rounded-4 d-flex flex-column overflow-hidden justify-content-center px-4">
+				<div class="change-speed d-flex flex-column justify-content-center align-items-center gap-4">
+					<div id="speed-value" class="text-to-change-speed d-flex align-items-center justify-content-center fw-bolder fs-3">
+						1.00x
+					</div>
+					<div class="speed-box">
+						<form action="" enctype="multipart/form-data">
+							<div class="d-flex rounded-pill">
+								<div class="d-flex rounded-pill w-100 align-items-center">
+									<button type="button" class="btn p-3 rounded-0 rounded-start-4"><i class="fa-regular fa-sliders"></i></button>
+									<input type="range" name="rangeInput" class="form-range" min="1" max="3" step="0.5">
+									<button type="button" class="icon-search btn p-3 rounded-0 rounded-end-4"><i class="fa-solid fa-magnifying-glass"></i></button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- OFFCANVAS SPEED FOOTER -->
+		
+		<!-- OFFCANVAS SINGER FOOTER -->
+		<div class="offcanvas offcanvas-bottom offcanvas-singer pb-5 z-in-footer-offcanvas h-75 bg-footer-reader p-3 mb-3"
+			 tabindex="-1"
+			 id="offcanvasBottom-singer"
+			 aria-labelledby="offcanvasBottomLabel"
+			 data-bs-backdrop="static">
+			<div class="offcanvas-body bg-white rounded-3 d-flex flex-column overflow-hidden p-1">
+				<div class="search-singer p-3">
+					<div class="form-box">
+						<form action="" enctype="multipart/form-data">
+							<div class="d-flex rounded-pill">
+								<div class="d-flex rounded-pill w-100">
+									<input type="text" name="name" class="input-search form-control border-0 rounded-0 rounded-start-4 bg-searchbox" placeholder="البحث في المفاتیح الجنان">
+									<button type="button" class="icon-search btn p-2 rounded-0 rounded-end-4 bg-searchbox"><i class="fa-solid fa-magnifying-glass"></i></button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="boorder-singer border w-100"></div>
+				<div class="singers d-flex flex-column gap-3 p-3 overflow-y-auto">
+					<div class="singer-box d-flex justify-content-center align-items-center gap-5 position-relative">
+						<img class="position-absolute start-0 rounded-circle" src="./static/assets/images/singer-1.png" alt="photo of singer one">
+						<span class="py-1">عبد الحي آل قمبر</span>
+					</div>
+					<div class="singer-box d-flex justify-content-center align-items-center gap-5 position-relative">
+						<img class="position-absolute start-0 rounded-circle" src="./static/assets/images/singer-1.png" alt="photo of singer one">
+						<span class="py-1">عبد الحي آل قمبر</span>
+					</div>
+					<div class="singer-box d-flex justify-content-center align-items-center gap-5 position-relative">
+						<img class="position-absolute start-0 rounded-circle" src="./static/assets/images/singer-1.png" alt="photo of singer one">
+						<span class="py-1">عبد الحي آل قمبر</span>
+					</div>
+					<div class="singer-box d-flex justify-content-center align-items-center gap-5 position-relative">
+						<img class="position-absolute start-0 rounded-circle" src="./static/assets/images/singer-1.png" alt="photo of singer one">
+						<span class="py-1">عبد الحي آل قمبر</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- OFFCANVAS SINGER FOOTER -->
 		
 		
 		<script src="./static/assets/js/bootstrap.bundle.js"></script>
