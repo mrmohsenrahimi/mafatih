@@ -1,0 +1,27 @@
+@import "root-colors.css";
+@import "style.css";
+@import "kfg-font.css";
+
+.bg-very-light-green {
+	background: var(--Tlight-lightGreen);
+}
+
+.donate-section {
+	border-radius: 15px;
+}
+
+#donate-range {
+	width: 100%;
+	direction: ltr;
+}
+
+.progress {
+	border-radius: 10px;
+	height: 20px;
+	direction: ltr;
+	background: var(--Tlight-light-black);
+}
+
+.progress-bar {
+	background: var(--Tlight-brown);
+}

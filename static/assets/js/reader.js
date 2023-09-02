@@ -12,23 +12,27 @@ settingBtn.addEventListener("click", function () {
 /*FONT SIZE BUTTONS*/
 const decreaseBtn = document.querySelector(".decrease");
 const increaseBtn = document.querySelector(".increase");
-let defaultFontSize = parseFloat(window.getComputedStyle(document.querySelector(".text-to-change-font-size")).fontSize);
-const boxFontSize = document.querySelector(".text-to-change-font-size");
-console.log(defaultFontSize);
+let defaultFontSize = parseInt(window.getComputedStyle(document.querySelector(".text-to-change-font-size")).fontSize);
+let boxFontSize = document.querySelector(".text-to-change-font-size");
 
 decreaseBtn.addEventListener("click", function () {
 	defaultFontSize--;
 	if (defaultFontSize <= 16) {
 		defaultFontSize = 16;
 	}
-	boxFontSize.style.fontSize = defaultFontSize;
+	console.log(defaultFontSize);
+	document.getElementById("fontSize").value = defaultFontSize;
+	// console.log(boxFontSize.style.fontSize);
+	boxFontSize.style.fontSize = defaultFontSize + "px";
 });
 increaseBtn.addEventListener("click", function () {
 	defaultFontSize++;
 	if (defaultFontSize > 48) {
 		defaultFontSize = 48;
 	}
-	boxFontSize.style.fontSize = defaultFontSize;
+	console.log(defaultFontSize);
+	document.getElementById("fontSize").value = defaultFontSize;
+	boxFontSize.style.fontSize = defaultFontSize + "px";
 });
 
 document.getElementById("fontSize").value = defaultFontSize;

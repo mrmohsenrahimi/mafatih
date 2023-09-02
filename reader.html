@@ -10,9 +10,6 @@
 		<link rel="stylesheet" href="./static/assets/css/bootstrap.rtl.css">
 		<link rel="stylesheet" href="./static/assets/css/all.css">
 		<link rel="stylesheet" href="./static/assets/css/reader-style.css">
-		<!--         <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-		<!--         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-		<!--         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap" rel="stylesheet"> -->
 	</head>
 	<body>
 		<!-- NAVBAR -->
@@ -518,9 +515,9 @@
 						 aria-labelledby="nav-contact-tab"
 						 tabindex="0">
 						<div class="change-font-size d-flex flex-column justify-content-center align-items-center gap-4">
-							<span class="text-to-change-font-size d-flex align-items-center justify-content-center">
+							<div id="text-to-change-font-size" class="text-to-change-font-size d-flex align-items-center justify-content-center">
 								اللّٰهِ
-							</span>
+							</div>
 							<div class="buttons-for-change-font-size d-flex justify-content-center gap-3">
 								<button class="btn border decrease">
 									<span>
@@ -528,7 +525,11 @@
 										<i class="fa-regular fa-a"></i>
 									</span>
 								</button>
-								<input type="number" name="font-size" id="fontSize" class="form-control w-25 text-center" readonly>
+								<input type="number"
+									   name="font-size"
+									   id="fontSize"
+									   class="form-control w-25 text-center"
+									   readonly>
 								<button class="btn border increase">
 									<span>
 										<i class="fa-regular fa-plus fa-xs"></i>
@@ -538,7 +539,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="tab-pane fade"
+					<div class="tab-pane fade P-3"
 						 id="nav-disabled"
 						 role="tabpanel"
 						 aria-labelledby="nav-disabled-tab"
@@ -547,15 +548,21 @@
 							<div class="change-font-family-quran">
 								<h3>Quran Font style :</h3>
 								<div class="font-family-box-select d-flex flex-column gap-3">
-									<div class="font-family-box font-family-box-active d-flex rounded-3 justify-content-around align-items-center" id="font-family-translate-1" dir="rtl">
+									<div class="font-family-box font-family-box-active d-flex rounded-3 justify-content-around align-items-center"
+										 id="font-family-translate-1"
+										 dir="rtl">
 										<span>نستعلیق :</span>
 										<img src="./static/assets/images/font-family-1.png" alt="font-family-1">
 									</div>
-									<div class="font-family-box d-flex rounded-3 justify-content-around align-items-center" id="font-family-translate-2" dir="rtl">
+									<div class="font-family-box d-flex rounded-3 justify-content-around align-items-center"
+										 id="font-family-translate-2"
+										 dir="rtl">
 										<span>نستعلیق :</span>
 										<img src="./static/assets/images/font-family-1.png" alt="font-family-1">
 									</div>
-									<div class="font-family-box d-flex rounded-3 justify-content-around align-items-center" id="font-family-translate-3" dir="rtl">
+									<div class="font-family-box d-flex rounded-3 justify-content-around align-items-center"
+										 id="font-family-translate-3"
+										 dir="rtl">
 										<span>نستعلیق :</span>
 										<img src="./static/assets/images/font-family-1.png" alt="font-family-1">
 									</div>
@@ -564,15 +571,21 @@
 							<div class="change-font-family-translate">
 								<h3>translation Font style :</h3>
 								<div class="font-family-box-select d-flex flex-column gap-3">
-									<div class="font-family-box font-family-box-active d-flex rounded-3 justify-content-around align-items-center" id="font-family-1" dir="rtl">
+									<div class="font-family-box font-family-box-active d-flex rounded-3 justify-content-around align-items-center"
+										 id="font-family-1"
+										 dir="rtl">
 										<span>نستعلیق :</span>
 										<img src="./static/assets/images/font-family-1.png" alt="font-family-1">
 									</div>
-									<div class="font-family-box d-flex rounded-3 justify-content-around align-items-center" id="font-family-2" dir="rtl">
+									<div class="font-family-box d-flex rounded-3 justify-content-around align-items-center"
+										 id="font-family-2"
+										 dir="rtl">
 										<span>نستعلیق :</span>
 										<img src="./static/assets/images/font-family-1.png" alt="font-family-1">
 									</div>
-									<div class="font-family-box d-flex rounded-3 justify-content-around align-items-center" id="font-family-3" dir="rtl">
+									<div class="font-family-box d-flex rounded-3 justify-content-around align-items-center"
+										 id="font-family-3"
+										 dir="rtl">
 										<span>نستعلیق :</span>
 										<img src="./static/assets/images/font-family-1.png" alt="font-family-1">
 									</div>
