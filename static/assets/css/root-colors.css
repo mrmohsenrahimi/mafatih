@@ -7,6 +7,7 @@
     --Tlight-AccordionGreen2: #cfecea;
     --Tlight-calender-weekdays-color: rgba(0, 0, 0, 0.50);
     --Tlight-light-black: rgba(0, 0, 0, 0.3);
+    --Tlight-very-light-black: rgba(0, 0, 0, 0.15);
     --Tlight-border-days-color: rgba(0, 0, 0, 0.08);
     --Tlight-calender-today-button: #D5BB9D;
     --Tlight-calender-today-color: #B9966D ;
@@ -15,4 +16,6 @@
     --Tlight-brown: #B4924D;
     --Tlight-black: #000;
     --Tlight-middle-black: rgba(0, 0, 0, 0.80);
+    --Tlight-gold: #CCA75C;
+    --Tlight-whight: #fff;
 }

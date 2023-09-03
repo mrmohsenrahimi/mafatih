@@ -25,3 +25,75 @@
 .progress-bar {
 	background: var(--Tlight-brown);
 }
+
+.nav-pills .nav-item-choose-donate-model {
+	/*width: 100px;*/
+	white-space: nowrap;
+	/*font-size: 12px;*/
+}
+
+.nav-pills .nav-item-choose-donate-model .nav-link {
+	background: transparent;
+	box-shadow: none;
+	color: var(--Tlight-black);
+}
+
+.nav-pills .nav-item-choose-donate-model .nav-link.active {
+	background: var(--Tlight-gold) !important;
+	box-shadow: none;
+	border: none;
+	border-radius: 12px;
+}
+
+.box-price-btns .price-btn {
+	width: 125px;
+}
+
+.box-price-btns .price-btn button.btn {
+	background: var(--Tlight-green);
+	border: none;
+	color: var(--Tlight-black);
+}
+
+.box-price-btns .price-btn button.active {
+	background: var(--Tlight-gold) !important;
+	border: none;
+	color: var(--Tlight-whight);
+}
+
+.terms-content {
+	box-shadow: 0 0 10px var(--Tlight-very-light-black);
+}
+
+.choose-type-of-money form .input-type-of-money {
+	border-radius: 0 12px 12px 0;
+}
+
+.choose-type-of-money form .button-choose-type-of-money {
+	border-radius: 12px 0 0 12px;
+	height: 56px;
+}
+
+.choose-type-of-money form input:focus, .choose-type-of-money  form input:active, .choose-type-of-money  form input:focus-within {
+	background: var(--Tlight-green);
+	box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color) !important;
+}
+
+.types-of-money-box {
+	box-shadow: 0 0 10px var(--Tlight-light-black);
+	width: 100%;
+	top: 55px;
+}
+
+.content-of-types-of-money {
+	overflow-y: auto;
+	height: 180px;
+}
+
+.type-of-money {
+	border-bottom: 1px solid var(--Tlight-very-light-black);
+}
+
+.type-of-money .shortcut-money {
+	border-right: 1px solid var(--Tlight-very-light-black);
+}
