@@ -3,19 +3,20 @@
     --Tlight-green: #B8DBD9;
     --Tlight-darkGreen: #1C6981;
     --Tlight-veryDarkGreen: #0C1F34;
+    --Tlight-darkBlueOpacity: rgb(12, 31, 52, 0.65);
+    --Tlight-darkBlueFooter: #043353;
     --Tlight-AccordionGreen1: #c4e7e4;
     --Tlight-AccordionGreen2: #cfecea;
-    --Tlight-calender-weekdays-color: rgba(0, 0, 0, 0.50);
+    --Tlight-middle-black: rgba(0, 0, 0, 0.50);
     --Tlight-light-black: rgba(0, 0, 0, 0.3);
     --Tlight-very-light-black: rgba(0, 0, 0, 0.15);
-    --Tlight-border-days-color: rgba(0, 0, 0, 0.08);
-    --Tlight-calender-today-button: #D5BB9D;
-    --Tlight-calender-today-color: #B9966D ;
-    --Tlight-calender-holiday-color: #c20000b8;
-    --Tlight-calender-auspicious-day-border: #0000007d;
+    --Tlight-lightRedBrown: #D5BB9D;
+    --Tlight-lightBrown: #B9966D ;
+    --Tlight-deepRed: #c20000b8;
     --Tlight-brown: #B4924D;
     --Tlight-black: #000;
-    --Tlight-middle-black: rgba(0, 0, 0, 0.80);
+    --Tlight-deep-black: rgba(0, 0, 0, 0.80);
     --Tlight-gold: #CCA75C;
+    --Tlight-darkGold: #847048;
     --Tlight-whight: #fff;
 }

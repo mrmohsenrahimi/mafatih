@@ -4,74 +4,76 @@
 /*IMPORTED STYLES*/
 
 * {
-    font-family: "noto", sans-serif;
-}
-
-.calender-bg-main-box {
-    background: var(--Tlight-green);
-}
-
-.calender-bg {
-    background: var(--Tlight-lightGreen);
+	font-family: "noto", sans-serif;
 }
 
 .calendar-header {
-    color: var(--Tlight-veryDarkGreen);
+	color: var(--Tlight-veryDarkGreen);
+}
+
+.dropdown-menu {
+	right: -40px !important;
 }
 
 .selected-date-type button {
-    padding-left: .5rem;
-    padding-right: .5rem;
+	padding-left: .5rem;
+	padding-right: .5rem;
 }
 
 .other-date-type {
-    color: var(--Tlight-calender-weekdays-color);
-    font-size: 10px;
+	color: var(--Tlight-middle-black);
 }
 
 .calender-weekdays {
-    color: var(--Tlight-calender-weekdays-color);
-}
-.calender-content {
-    box-shadow: 0 0 .5rem lightgray;
-    /*filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.10));*/
-    /*min-width: 300px;*/
+	color: var(--Tlight-middle-black);
 }
 
 .disable-days {
-    color: var(--Tlight-light-black) !important;
-    border: none;
+	color: var(--Tlight-light-black) !important;
+	border: none;
 }
 
 .day {
-    padding: 0;
-    border: none;
+	padding: 0;
+	border: none;
+	border-radius: 10px;
 }
 
 .date-font {
-    font-size: large;
+	font-size: large;
+}
+
+@media screen and (max-width: 576px) {
+	.date-font {
+		font-size: 14px !important;
+	}
 }
 
 .other-date-font {
-    font-size: 15px;
-    color: var(--Tlight-calender-weekdays-color);
+	font-size: 15px;
+	color: var(--Tlight-middle-black);
+}
+
+@media screen and (max-width: 576px) {
+	.other-date-font {
+		font-size: 11px !important;
+	}
 }
 
 .btn-today {
-    border: none !important;
-    background: var(--Tlight-calender-today-button);
-    border-radius: 10px !important;
-    box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.10);
+	border: none !important;
+	background: var(--Tlight-lightRedBrown);
+	border-radius: 10px !important;
 }
 
 .btn-today:hover {
-    box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.20);
-    background: var(--Tlight-calender-today-button);
+	box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.20);
+	background: var(--Tlight-lightRedBrown);
 }
 
 .btn-today:active {
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.30) !important;
-    background: var(--Tlight-calender-today-button) !important;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.30) !important;
+	background: var(--Tlight-lightRedBrown) !important;
 }
 
 .today,
@@ -79,7 +81,7 @@
 .today:focus,
 .today:active,
 .today:focus-within {
-    border: var(--Tlight-calender-today-color) 1px solid !important;
+	border: var(--Tlight-lightBrown) 1px solid !important;
 }
 
 .auspicious-day,
@@ -87,7 +89,7 @@
 .auspicious-day:focus,
 .auspicious-day:active,
 .auspicious-day:focus-within {
-    border: var(--Tlight-calender-auspicious-day-border) 1px solid !important;
+	border: var(--Tlight-middle-black) 1px solid !important;
 }
 
 .holiday,
@@ -96,30 +98,31 @@
 .holiday:active,
 .holiday:focus-within,
 .holiday .other-date-font {
-    color: var(--Tlight-calender-holiday-color) !important;
+	color: var(--Tlight-deepRed) !important;
 }
 
 .event-holiday {
-    color: var(--Tlight-calender-holiday-color);
+	color: var(--Tlight-deepRed);
 }
 
 /*MODALS STYLE*/
 .modal-dialog {
-    height: 40vh;
+	height: 40vh;
 }
 
 .modal-content {
-    background: var(--Tlight-green);
-    height: 24.125rem;
-    width: 20rem;
+	background: var(--Tlight-green);
+	height: 24.125rem;
+	width: 20rem;
 }
 
 .modal-content .modal-header, .modal-footer {
-    border: none;
+	border: none;
 }
 
 .modal-dialog .modal-header .modal-title {
-    padding: .5rem 0 1rem 0;
-    border-bottom: var(--Tlight-light-black) 1px solid;
+	padding: .5rem 0 1rem 0;
+	border-bottom: var(--Tlight-light-black) 1px solid;
 }
+
 /*MODALS STYLE*/

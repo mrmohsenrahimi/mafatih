@@ -23,30 +23,11 @@
 	z-index: 1045;
 }
 
-.bg-footer-reader {
-	background: var(--Tlight-lightGreen);
-	box-shadow: 0px 0px 24px 12px rgba(0, 0, 0, 0.24);
-}
-
 .footer .themes > {
 	color: var(--Tlight-veryDarkGreen);
 	text-align: justify;
 	font-family: noto, sans-serif;
 	font-size: 24px;
-	font-style: normal;
-	font-weight: 700;
-}
-
-.footer .themes .fa-sun-bright {
-	stroke-width: 1.1px;
-	stroke: var(--Tlight-veryDarkGreen);
-}
-
-.footer .speed > {
-	color: var(--Tlight-veryDarkGreen);
-	text-align: justify;
-	font-family: noto, sans-serif;
-	font-size: 14px !important;
 	font-style: normal;
 	font-weight: 700;
 }
@@ -98,7 +79,6 @@
 .text-to-change-font-size {
 	width: 50%;
 	height: 20vh;
-	box-shadow: 0 0 10px var(--Tlight-light-black);
 	border-radius: 0.8rem;
 	font-size: 32px;
 }
@@ -121,7 +101,6 @@
 .font-family-box {
 	padding: 0.4rem;
 	border-radius: 8px;
-	box-shadow: 0 0 10px var(--Tlight-light-black);
 }
 
 .font-family-box-active {
@@ -129,7 +108,6 @@
 }
 
 .speed-box {
-	box-shadow: 0 0 10px var(--Tlight-light-black);
 	border-radius: 15px;
 	width: 100%;
 }
@@ -147,7 +125,6 @@
 }
 
 .singer-box {
-	box-shadow: 0 0 10px var(--Tlight-light-black);
 	border-radius: 15px;
 }
 
